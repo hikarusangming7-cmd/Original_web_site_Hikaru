@@ -11,11 +11,46 @@
     <div class="wrapper">
       <!-- <img class="bg" src="運命怪談背景1.jpg" alt="" /> -->
       <div class="container">
+        
         <img class="overlay" src="./assets/img/運命怪談３.png" alt="" />
         <div class="button-group">
-          <button>はじめる</button>
-          <button>キャラクター</button>
-          <button>ストーリー</button>
+          <div class="dropdown">
+            <button id="menu_Btn" class="start1">はじめる</button>
+            <ul class="dropdown-content">
+              <li><button data-action="ningyo">ー人形編ー</button></li>
+              <li><button data-action="okada">ー岡田さん編ー</button></li>
+            </ul>
+            
+          
+         
+         
+          <button id="character" class="character2">キャラクター</button>
+          <ul class="hide1">
+            <li><button>ー人形編ー</button></li>
+            <li><button>ー岡田さん編ー</button></li>
+          </ul>
+          </div>
+
+          <button id="story">ストーリー</button>
+          </div>
+          </div>
+            </div>
+          <style>
+            .dropdown-content {
+              display: none; /* 初期は非表示 */
+              background: transparent;
+              padding: 10px;
+              border: none;
+            }
+          </style>
+
+          
+
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script src="./assets/JS/script.js"></script>
+          <script>
+            
+          </script>
         </div>
       </div>
     </div>

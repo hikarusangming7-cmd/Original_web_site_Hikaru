@@ -30,11 +30,11 @@ body{
 .overlay {
     height: 100vh;
     width: 40%;
-    display: block;
-    margin: 0 auto;
-    /* position:absolute; */
-    /* top: 20px;
-    left: 30px; */
+    /* display: block; */
+    margin: 0 auto; */
+    position:absolute;
+    top: 20px;
+    left: 30px; 
     
 }
 
@@ -43,6 +43,16 @@ body{
     flex-direction: row;
     justify-content: center;
 } */
+
+.hide1{
+    display: none;
+    gap: 10px;
+}
+
+.hide1.is-open{
+    display: block;
+    }
+
 
 
 
@@ -56,7 +66,7 @@ body{
 
 .button-group{
     position: absolute;
-    bottom: 120px;
+    bottom: 200px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -79,3 +89,84 @@ body{
     background-color: #444;
     border-color: #aaa;
 }
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;             /* ulのデフォルト余白を消す */
+  padding: 0;
+  list-style: none;
+  z-index: 1000;
+display: flex;
+  /* flex-direction: column; */
+  gap: 8px;              /* ボタン同士の間隔 */
+  min-width: 180px;      /* 必要なら幅を確保 */
+}
+
+
+
+
+.dropdown-content button:hover {
+  /* display: none;             初期は非表示 */
+  /* position: absolute; */
+  background-color: #444;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;            /* ホバー時に表示 */
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+} */
+
+/* Dropdown Content (Hidden by Default) */
+/* .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+} */
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+/* .dropdown:hover .dropdown-content {display: block;} */
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */ 

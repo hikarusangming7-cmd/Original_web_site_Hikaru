@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>運命怪談</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <img class="bg" src="運命怪談背景1.jpg" alt="" /> -->
+      <div class="container">
+        <img class="overlay" src="./assets/img/運命怪談３.png" alt="" />
+        <div class="button-group">
+          <div>
+            <button id="menu_Btn" class="start1">はじめる</button>
+            <ul class="dropdown-content">
+              <button>ー人形編ー</button>
+              <button>ー岡田さん編ー</button>
+            </ul>
+          </div>
+         
+          <div>
+          <button id="character" class="character2">キャラクター</button>
+          <ul class="hide1">
+            <li>
+            <button>ー人形編ー</button>
+            <button>ー岡田さん編ー</button>
+            </li>
+          </ul>
+          </div>
+
+          <button id="story">ストーリー</button>
+          <script src="./assets/JS/script.js"></script>
+          <style>
+            .dropdown-content {
+              display: none; /* 初期は非表示 */
+              background: #f9f9f9;
+              padding: 10px;
+              border: 1px solid #ccc;
+            }
+          </style>
+
+          
+
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $("menuBtn").hover(
+              function () {
+                $(this).next(".dropdown-content").fadeIn(300);
+              },
+              function () {
+                $(this).next(".dropdown-content").fadeOut(300);
+              }
+            );
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
