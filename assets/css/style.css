@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background: black;
@@ -8,34 +8,29 @@ body{
     height: 100vh;
 }
 
-
-
-.wrapper{
-    background-image: url('../img/運命怪談背景1.jpg');
+.wrapper {
+    background-image: url("../img/運命怪談背景1.jpg");
     background-size: cover;
     position: relative;
     /* width: 900px;
     height: 1152px; */
     height: 100vh;
     width: 90vw;
-
 }
 
-.bg{
+.bg {
     display: block;
     height: 100vh;
-
 }
 
 .overlay {
     height: 100vh;
-    width: 40%;
+    width: 50%;
     /* display: block; */
-    margin: 0 auto; */
-    position:absolute;
+    margin: 0 auto;
+    position: absolute;
     top: 20px;
-    left: 30px; 
-    
+    left: 330px;
 }
 
 /* .container{
@@ -44,98 +39,118 @@ body{
     justify-content: center;
 } */
 
-.hide1{
-    display: none;
-    gap: 10px;
-}
-
-.hide1.is-open{
-    display: block;
-    }
-
-
-
-
-
-
-.background{
+.background {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.button-group{
+.button-group {
     position: absolute;
     bottom: 200px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    gap: 0px;
 }
 
-.button-group button{
-    background-color: rgba(20,20,20,0.85);
-    border:2px solid #666;
+.button-group button {
+    background-color: rgba(20, 20, 20, 0.85);
+    border: 2px solid #666;
     color: #f0f0f0;
     font-size: 20px;
     padding: 12px 28px;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
-.button-group button:hover{
+/* .start1 {
+  margin-right: 40px; /* はじめるボタンの右に余白 */
+/* } */
+
+.button-group button:hover {
     background-color: #444;
     border-color: #aaa;
 }
 
-
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
-
-.dropdown-content{
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin: 0;             /* ulのデフォルト余白を消す */
-  padding: 0;
-  list-style: none;
-  z-index: 1000;
-display: flex;
-  /* flex-direction: column; */
-  gap: 8px;              /* ボタン同士の間隔 */
-  min-width: 180px;      /* 必要なら幅を確保 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    margin: 0; /* ulのデフォルト余白を消す */
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px; /* ボタン同士の間隔 */
+    min-width: 300px; /* 必要なら幅を確保 */
 }
-
-
-
 
 .dropdown-content button:hover {
-  /* display: none;             初期は非表示 */
-  /* position: absolute; */
-  background-color: #444;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+    /* display: none;             初期は非表示 */
+    /* position: absolute; */
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;            /* ホバー時に表示 */
+    display: block; /* ホバー時に表示 */
+}
+
+.dropdown-content2 {
+    display: none;
+    gap: 10px;
+
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin: 0; /* ulのデフォルト余白を消す */
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* ボタン同士の間隔 */
+    min-width: 200px; /* 必要なら幅を確保 */
+}
+
+.dropdown-content2.is-open {
+    display: block;
+}
+
+.dropdown-content2 button:hover {
+    /* display: none;             初期は非表示 */
+    /* position: absolute; */
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -156,10 +171,10 @@ display: flex;
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 /* Change color of dropdown links on hover
@@ -169,4 +184,4 @@ display: flex;
 /* .dropdown:hover .dropdown-content {display: block;} */
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */ 
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
