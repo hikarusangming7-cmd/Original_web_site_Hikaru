@@ -4,7 +4,38 @@
     /* background-color: black; */
 }
 
+/* .container{
+   
+    color: grey;
+} */
+/* 
+h1 {
+  font-size: 3rem;
+  color: crimson; /* 血のような赤 */
+  /* text-shadow: 2px 2px 5px black, 0 0 10px darkred;
+  font-family: 'Creepster', cursive; /* ホラー系Google Fontを使うと雰囲気アップ */
+  /* animation: flicker 2s infinite;
+  letter-spacing: 5px;
+}  */
 
+/* 点滅するような不安定な光 */
+/* @keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+    text-shadow: 2px 2px 8px red, 0 0 20px darkred;
+  }
+  20%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+} */
+
+/* .sentaku_container{
+    border: 50px;
+
+} */
+
+/* assets/css/page2.css */
 
 /* リセットと土台 */
 :root {
@@ -97,16 +128,6 @@ body {
 .choice:active { transform: translateY(0); }
 .choice:first-child { outline: 1px solid rgba(181,30,30,.35); }
 .choice:first-child:hover { background: rgba(181,30,30,.18); }
-
-
-.choice:first-child,
-.choice:last-child {
-  outline: 1px solid rgba(181,30,30,.35);
-}
-.choice:first-child:hover,
-.choice:last-child:hover {
-  background: rgba(181,30,30,.18);
-}
 
 /* スマホ最適化 */
 @media (max-width: 480px) {
