@@ -6,6 +6,9 @@
 
 
 
+.choices.is-hidden { display: none; }
+
+
 /* リセットと土台 */
 :root {
   --page-width: 700px;

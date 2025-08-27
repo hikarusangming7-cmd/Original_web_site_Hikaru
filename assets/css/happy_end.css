@@ -1,0 +1,60 @@
+* { margin: 0; }
+body { background-color: #000; }
+
+.happy_end { height: 100vh; }
+
+.imge{
+  background-image: url(/assets/img/復縁エンド.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.button-container {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;              /* 余白を少し上に */
+  transform: translateX(-50%);
+}
+
+.link-button {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: none;
+  color: #2a241a;               /* くすんだインク色 */
+  background: #e6dcc7;          /* 古紙っぽい色 */
+  border: 1.5px solid #3c352a;  /* 細いインク線 */
+  border-radius: 6px;
+  font-family: "Noto Serif JP", serif;
+  letter-spacing: 0.08em;
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.25) inset,
+    0 6px 18px rgba(0,0,0,0.35); /* うっすら影 */
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+  filter: sepia(0.15) saturate(0.9); /* ほんのり古感 */
+}
+
+/* ホバー時は控えめに濃く・押し込む */
+.link-button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.25) inset,
+    0 10px 22px rgba(0,0,0,0.45);
+}
+
+/* クリック時は“押された”感じ */
+.link-button:active {
+  transform: translateY(0);
+  box-shadow:
+    0 0 0 rgba(0,0,0,0.25) inset,
+    0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* 小さめ画面でのサイズ調整 */
+@media (max-width: 480px) {
+  .link-button { font-size: 18px; padding: 10px 22px; }
+  .button-container { bottom: 2rem; }
+}
