@@ -265,7 +265,11 @@ choices.addEventListener("click", (e) => {
         );
         story.appendChild(document.createElement("br"));
         appendPara(
-            "それから私は、元彼から送られてくる人形の写真をただ無視し続けた。 「今日の⚪︎⚪︎ちゃんも可愛い♡」 毎日同じ文面がスマホを埋め尽くし、未読の通知だけが増えていく。"
+            "それから私は、元彼から送られてくる人形の写真をただ無視し続けた。 "
+        );
+        story.appendChild(document.createElement("br"));
+        appendPara("――「今日の⚪︎⚪︎ちゃんも可愛い♡」 毎日同じ文面がスマホを埋め尽くし、未読の通知だけが増えていく。"
+
         );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -773,7 +777,7 @@ choices.addEventListener("click", (e) => {
         // バッドエンドへ遷移（別ページ）
         setTimeout(() => {
             window.location.href = "./bad_end.html";
-        }, 42000);
+        }, 43000);
     } else if (key === "4b") {
         appendPara("先輩の声は震えていた。");
         story.appendChild(document.createElement("br"));
