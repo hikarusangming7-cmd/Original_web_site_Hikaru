@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    background-color: rgb(1, 8, 23);
+}
+
+.bad_end{
+    height: 100vh;
+}
+
+.imge{
+    background-image: url(/assets/img/復縁バッドエンド.png);
+    background-size: contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin: 0 auto ;
+    background-position: center;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+}
+
+/* ======================
+   沼の恐怖ボタンデザイン
+   ====================== */
+.button-container button {
+    padding: 15px 40px;
+    font-size: 24px;
+    font-family: "Creepster", "Noto Serif JP", serif;
+    color: #b3e5ff; /* 淡い水色 */
+    background: linear-gradient(to bottom, #0a1a2a, #000); /* 深い青黒 */
+    border: 2px solid #1e3a5f;
+    border-radius: 4px;
+    cursor: pointer;
+    text-shadow: 0 0 8px #5cd1ff, 0 0 15px #26778f; /* 冷たい光 */
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-container button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(50,150,180,0.3) 10%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.button-container button:hover::before {
+    opacity: 1;
+    animation: pulse 1s infinite;
+}
+
+.button-container button:hover {
+    color: #e0faff;
+    background: linear-gradient(to bottom, #14344a, #000);
+    text-shadow: 0 0 12px #6ee3ff, 0 0 25px #00bcd4;
+    transform: scale(1.08) rotate(-1deg);
+}
+
+/* ======================
+   脈打つような冷光アニメ
+   ====================== */
+@keyframes pulse {
+    0%   { transform: scale(1);   opacity: 0.6; }
+    50%  { transform: scale(1.2); opacity: 1;   }
+    100% { transform: scale(1);   opacity: 0.6; }
+}
+
+/* ============ 青緑ティント：画像ファイル無加工 ============ */
+/* 好みの濃さと色はここで調整 */
+:root{
+  --tint-color: #1e6a6a;   /* 青緑（お好みで少し青寄りにしてもOK） */
+  --tint-alpha: 0.10;      /* 0.06〜0.14くらいが目に優しい */
+  --vignette-alpha: 0.18;  /* 端の湿ったビネット、0.10〜0.22目安 */
+}
+
+/* 既存 .imge にティントとビネットを重ねる（背景画像はそのまま） */
+.imge{
+  position: relative; /* 疑似要素を載せる土台 */
+  isolation: isolate; /* ブレンドの影響範囲を限定 */
+}
+
+/* 色味だけを静かに乗せる（彩度やコントラストは触らない） */
+.imge::after{
+  content:"";
+  position:absolute; inset:0;
+  pointer-events:none;
+  /* ほんのりムラを作ると“水気”っぽくなる */
+  background:
+    radial-gradient(100% 70% at 50% 15%, color-mix(in oklab, var(--tint-color) 85%, transparent) 0%, transparent 60%),
+    linear-gradient(180deg, color-mix(in oklab, var(--tint-color) 50%, transparent), transparent 45%);
+  mix-blend-mode:color;     /* 色相だけそっと重ねる */
+  opacity: var(--tint-alpha);
+  z-index: 0;
+}
+
+/* 端を少し湿らせるビネット：画像中心はほぼ無影響 */
+.imge::before{
+  content:"";
+  position:absolute; inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(140% 95% at 50% 8%, rgba(0,0,0,0) 55%, rgba(0,0,0,var(--vignette-alpha)) 100%);
+  mix-blend-mode:multiply;
+  z-index: 0;
+}
+
+/* ユーザーの“高コントラスト”設定に配慮：濃さを弱める */
+@media (prefers-contrast: more){
+  :root{ --tint-alpha: 0.06; --vignette-alpha: 0.12; }
+}
+/* 動きは無し（負担軽減）。もし入れても reduce で止める */
+@media (prefers-reduced-motion: reduce){
+  /* 今回アニメは使っていないので空でOK */
+}
+
+/* 端の靄を少し増やす（中央の顔はそのまま） */
+.imge::before{
+  background:
+    radial-gradient(140% 95% at 50% 8%, rgba(0,0,0,0) 50%, rgba(0,0,0,var(--vignette-alpha)) 100%),
+    radial-gradient(120% 80% at 50% 100%, color-mix(in oklab, var(--tint-color) 25%, transparent) 0%, transparent 60%);
+}
