@@ -892,190 +892,361 @@ choices.addEventListener("click", (e) => {
         //     },
         // ]);
     } else if (key === "4a") {
-        appendPara("先輩は額に手を当て、苦しそうに目を閉じていた。");
-        appendPara("「先輩、本当に大丈夫ですか？」");
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "「……ごめん。正直、これは俺の力だけじゃどうにもできない。 でも――心当たりがある。」"
-        );
-        appendPara("「心当たり……？」");
-
-        appendPara(
-            "「前にも、似たようなケースで相談したことがあってね。俺が頼った霊能者がいるの。 その人なら、この人形をどうにかできるかもしれない。」"
-        );
-        appendPara("そう言って先輩は、スマホを取り出し、連絡先を探し始めた。");
-        appendPara("「……紹介してもらえますか？」");
-        appendPara(
-            "「もちろん。ただ、覚悟して。その為には元彼と人形にも一緒についてきてもらわないと……」"
-        );
+        appendPara("翌日、出社してすぐに先輩の姿を見つけた。");
+        appendPara("気まずさを抱えたまま視線を逸らすのは、もう嫌だった。");
+        story.appendChild(document.createElement("br"));
+        appendPara("思い切って声をかける。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
+        appendPara("「先輩、今晩……よかったら、ごはん行きませんか？」");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("一瞬だけ、先輩の表情が固まる。けれど次の瞬間、穏やかな笑みが戻った。");
+        appendPara("「うん。行こう。」");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("退社後、近くの食堂のいつもの席に向かい合って座る。");
+        appendPara("湯気の向こうで、私は息を整えた。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("「先輩……元彼に、連絡しました。」");
+        appendPara("箸を置く音が、微かに鳴った。");
+        story.appendChild(document.createElement("br"));
+        appendPara("先輩は少しだけ目を伏せ、静かに言う。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「……この前は、ごめん。」");
+        story.appendChild(document.createElement("br"));
+        appendPara("その言葉は、想像していたよりもずっとまっすぐで、あたたかかった。");
+        appendPara("私は首を振る。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「先輩は悪くないです。あの時、私もどうしていいか分からなくて……。」");
+        appendPara("先輩は小さくうなずき、私の言葉を待った。");
+        story.appendChild(document.createElement("br"));
+        appendPara("胸の奥にしまっていたことを、そっと取り出す。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「私、今週末、誕生日なんです。それで……彼と“星映湖”に行ってきます。」");
+        story.appendChild(document.createElement("br"));
+        appendPara("先輩の目が、わずかに見開かれた。");
+        appendPara("けれどすぐに、あの時と同じ、柔らかな笑顔に戻る。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「ああ……もうそこまで仲良くなったんだ。よかったね。」");
+        story.appendChild(document.createElement("br"));
+        appendPara("その笑顔は、前と同じだった。");
+        appendPara("私は微笑み返し、正直な気持ちを置くように言う。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「先輩のおかげです。……まだ、彼への気持ちははっきりしないけど。また、良い関係を築けそうな気がして。」");
+        story.appendChild(document.createElement("br"));
+        appendPara("先輩は「うん」と短く頷いた。");
+        story.appendChild(document.createElement("br"));
+        appendPara("その笑みは優しく、そして――どこか、少しだけ遠かった。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("――そして、誕生日当日を迎えた。");
+        appendPara("湖に着くまでは、言葉よりも記憶のほうがよく喋っていた。");
+        story.appendChild(document.createElement("br"));
+        appendPara("ハンドルを握る彼の癖も、カーブのたびに窓がかすかに鳴る音も、あの頃のまま。胸の内側のやわらかな場所が、そのたびきゅっと縮む。");
+        appendPara("ラジオから昔よく聴いた曲が流れ、思わず口ずさむと、彼も気づかれないほど小さく合わせる。");
+        appendPara("そのささやかな合奏が終わるまで――私は、ほんの少しだけ幸福だった。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("彼の運転する車は山へ入り、ナビは時おり途切れ、地図は灰色に沈む。");
+        appendPara("曲がり角をひとつ、またひとつ。見覚えのない林道。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「……道、合ってる？」");
+        appendPara("「たぶん。電波が戻れば――」");
+        story.appendChild(document.createElement("br"));
+        appendPara("言葉の尻を、不意に吹き抜ける冷気が攫っていく。");
+        appendPara("背中に乗ったざわめきが、落ちない。嫌な気配。");
+        story.appendChild(document.createElement("br"));
+        appendPara("私はスマホを開いた。電波は細い一本。");
+        appendPara("迷った末、先輩に短くメッセージを送る。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("「すみません。今、星映湖へ向かっています。」");
+        appendPara("「なんだか嫌な感じがして……。電波弱いです。念のため。」");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("送信はくるくる回り、やがて「送信済み」に変わった。");
+        appendPara("返事は来ない。山の影が、窓を流れる。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("――そして、真夜中。");
+        appendPara("ようやく湖らしき開けた場所に出た。");
+        story.appendChild(document.createElement("br"));
+        appendPara("風は冷たく、星は数えるほどしかない。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「着いたのかな……」");
+        story.appendChild(document.createElement("br"));
+        appendPara("水は月だけを薄く返し、空の星はほとんど見えない。風が止み、世界が息を殺す。");
+        story.appendChild(document.createElement("br"));
+        appendPara("それでも彼の横顔だけは、不思議とあたたかかった。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「寒くない？」そう言って肩に手を置かれると、嘘のように心がほどける。");
+        story.appendChild(document.createElement("br"));
+        appendPara("このまま「やり直そう」と言ってしまえば、何かが元へ戻る気がした。");
+        story.appendChild(document.createElement("br"));
+        appendPara("戻らないと知りながら、喉の奥で言葉が形になりかける。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("彼が私の手を取る。");
+        appendPara("昔より少し骨ばって、それでも確かに――私の知っている温度。");
+        story.appendChild(document.createElement("br"));
+        appendPara("そのぬくもりに寄りかかるように指を絡めた瞬間、足もとがふっと軽くなった。");
+        appendPara("水面が、静かに口を開く。");
+        appendPara("いつのまにか私たちの足元には水が。");
+        appendPara("どんどん水位が増していく。湖の範囲が広がっていく。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("「……ねえ」");
+        appendPara("言いかけた声は風にちぎれ、体の自由が解けていく。");
+        appendPara("足首に冷たい指が触れ、ぐい、と下へ。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「危ない！」");
+        appendPara("彼が私の腕を掴み、全身で引き戻す。");
+        appendPara("ふたりまとめて、湖に呑まれかける。");
+        appendPara("彼の手は確かで、震えていて、懐かしい体温をしていた。痛いくらいの力がうれしくて、私は反射的にその手を握り返す――");
+        
+        appendPara("まるで、それだけで過去も未来も繋ぎ止められると信じるみたいに。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("彼の体温だけが浮き輪のようで、私はそれを必死に抱きしめた。");
+        appendPara("「助けて」と「離さないで」が同じ音で喉につかえる。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("――私はまだ、彼を手放しきれていない。");
+        appendPara("そう思った瞬間、水の下で誰かが笑った。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("「おい！」");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("闇を裂く声。");
+        appendPara("その声で、私ははっと我に返る。");
+        appendPara("土の上に白い環が撒かれ、鈴が短く鳴り、空気の密度が変わる。");
+        appendPara("「今助けるから諦めるな！！」");
+        story.appendChild(document.createElement("br"));
+        appendPara("声の主が駆け寄り、私と彼の腕をまとめて抱え起こす。");
+        appendPara("円の縁が淡く光り、足首に絡みついていた冷たさがほどけた。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「先輩……」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「君は彼の手を放さないで。」");
+        story.appendChild(document.createElement("br"));
+        appendPara("先輩の声は静かで、強い。");
+        appendPara("私は言われるまま、彼の手をさらに強く握った。");
+        story.appendChild(document.createElement("br"));
+        appendPara("水の底で軋む音。");
+        appendPara("ろうそくの炎めいた月光が震え、鈴がもう一度、やさしく鳴る。");
+        appendPara("風が戻り、葦がかすかに擦れ、虫の音が夜を縫い合わせた。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「――――ここまで来ればもう大丈夫だから。」");
+        appendPara("息を切らしながら先輩はそう言った。私たちは地面に崩れ落ち、荒い息を整えた。");
+        appendPara("先輩は私たちの肩に触れ、無事を確かめてから、安堵の息を漏らした。");
+        story.appendChild(document.createElement("br"));
+        // appendPara("「……間に合ってよかった。」");
+        appendPara("私はうなずく。");
+        appendPara("彼の手はまだ私の手にあり、先輩の手も背にある。");
+        appendPara("二つの温度が胸の中でぶつかって、溶け合わない。");
+        story.appendChild(document.createElement("br"));
+        appendPara("見上げた空は、やはり星が少ない。");
+        appendPara("湖面は深い色で黙したまま――");
+        appendPara("それでも、三人の呼吸だけが、同じリズムを取り戻しつつあった。");
+        story.appendChild(document.createElement("br"));
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
+        // appendPara("");
 
         story.appendChild(document.createElement("br"));
 
         setChoices([
-            { label: "やめておく", next: "5a", variant: "danger" },
-            { label: "それでもお願いする", next: "5b", variant: "danger" },
+            { label: "先輩に話しかける", next: "5a", variant: "danger" },
+            { label: "元彼に話しかける", next: "5b", variant: "danger" },//元彼とハッピーエンド
         ]);
     } else if (key === "5a") {
-        appendPara(
-            "先輩が紹介してくれた霊能者は、「その人形と持ち主を直接見ないと、正確には分からない」と言った。 つまり――元彼と、あの人形を連れていかなければならない。"
-        );
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "考えただけで全身が震えた。 人形を目の前に置くことも、ましてや元彼と一緒に出向くことなど到底できない。"
-        );
-        appendPara("「すみません……やっぱり今回は遠慮します」");
-        appendPara(
-            "私は怖さに負け、霊能者への依頼を断った。 先輩は何か言いたげだったが、結局それ以上強く勧めてはこなかった。"
-        );
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "それから私は、元彼から送られてくる人形の写真をただ無視し続けた。 "
-        );
-        story.appendChild(document.createElement("br"));
-        appendPara("――「今日の⚪︎⚪︎ちゃんも可愛い♡」 毎日同じ文面がスマホを埋め尽くし、未読の通知だけが増えていく。"
-
-        );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-
-        appendPara("――そしてある夜。");
+        appendPara("雫のように遅れて震えが来る。私は息を整え、先輩の顔を見た。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "仕事から帰宅すると、玄関の鍵は確かに閉めたはずなのに、家の中から物音がした。 恐る恐るドアを開けると、真っ暗な部屋の中、リビングの中央に元彼が座っていた。 その腕には、あの人形が大事そうに抱かれている。"
-        );
+        appendPara("「先輩……私、自分が危ない状況だってわかってたのに、どこか心ここにあらずで……ふわふわと現実味がなくて。やっと今、何が起きていたのか飲み込めてきました」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「本当、びっくりしたよ……。君が無事でよかった」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「それにしても、どうして先輩がここに？」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「君のメッセージを見て、嫌な予感がした。星映湖じゃない方角に向かってるんじゃないかって。昔、ここに来たことがあるんだ」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「え？ここ、星映湖じゃないんですか？」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「違うよ。『静女ヶ淵（しずめがふち）』っていって、女性が近づいちゃいけない湖なんだ」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「え……？それ、どういう意味ですか」");
+        story.appendChild(document.createElement("br"));
+        appendPara("背筋に冷たいものが走る。");
+        story.appendChild(document.createElement("br"));
+        appendPara("先輩は短く息を吐き、静かに続けた。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「……大昔、このあたりに災いの絶えない村があってね。ある日、旅の尼さんが迷い込んだ。彼女は荒れた村を見かねて復興を手伝い、献身的に働いた。村はみるみる元気を取り戻したんだ」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「いい話……ですよね？」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「ところが、また大雨が降った。その村では災いのたびに“人柱”として女性を湖に沈める習わしがあって――それをやると不思議と災害が収まる、と信じられていた」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「えっ……」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「その尼さんが、人柱にされた」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「……っ！」");
+        story.appendChild(document.createElement("br"));
+        appendPara("（じゃあ、さっき私の足を掴んだのは――）");
+        story.appendChild(document.createElement("br"));
+        appendPara("「それ以来、災いはかえって収まらなくなり、村は人が寄りつかない場所になった。尼さんは今でもこの湖を離れられず、自分の代わりになる“女性”を探して彷徨っている……そんな伝えが残っている」");
+        story.appendChild(document.createElement("br"));
+        appendPara("「せ、先輩……怖いです……」");
+        story.appendChild(document.createElement("br"));
+        appendPara("先輩は私の肩にそっと手を置いた。指先は温かいのに、湖から吹く風は骨の奥まで冷たかった。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「大丈夫。今夜はもうここを離れよう。続きは、安全な場所で――それと。」");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "「最近全然LINE見てくれないから、来ちゃったよ。この子、実物は写真よりもっと可愛いでしょ？"
-        );
-        appendPara("ねぇ、可愛いって言ってよ……。ねぇ……。ねぇ……。」");
-
+         appendPara("先輩が、月明かりの下でふっと笑った。");
+        story.appendChild(document.createElement("br"));
+        appendPara("喉が、かすかに鳴る。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
+        appendPara("「誕生日おめでとう」");
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "逃げようと後ずさった瞬間、背後で玄関の扉がバタンと閉まる音がした。"
-        );
-
+        appendPara("「……えっ」");
         story.appendChild(document.createElement("br"));
+        appendPara("その一言に、優しい笑顔に、胸の奥で鼓動が跳ねる。");
         story.appendChild(document.createElement("br"));
+        appendPara("光の縁取りに浮かぶ横顔は、暗闇のなか月明かりにやさしく縁どられ、いつもの安心感といっしょに、胸を不意に鳴らすほど格好よく見えた。自分の鼓動が、はっきりわかる。");
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "―あの時、霊能者に会わせていれば、未来は変わっていたのだろうか。 もう確かめる術はない。"
-        );
-
+        appendPara("「もう日付、変わっちゃったかな……大丈夫？」");
         story.appendChild(document.createElement("br"));
+        appendPara("「そんな……嬉しいです、先輩」");
         story.appendChild(document.createElement("br"));
+        appendPara("「……」");
         story.appendChild(document.createElement("br"));
-        hideChoices("やめておく"); // ← ここで選択肢を消す
-
-        // バッドエンドへ遷移（別ページ）
-        setTimeout(() => {
-            window.location.href = "./bad_end2.html";
-        }, 32000);
-    } else if (key === "5b") {
-        appendPara("私は思い切って、元彼にメッセージを送った。");
-        appendPara("――「霊能者に相談に行くから、人形と一緒に来てほしい」");
+        appendPara("そう言うと、先輩は気恥ずかしそうに頭をかき、視線をそらす。");
         story.appendChild(document.createElement("br"));
-        appendPara("しばらくして返事が届く。");
+        appendPara("その仕草さえ、心臓に悪い。");
         story.appendChild(document.createElement("br"));
+        appendPara("「先輩、もしかして――顔、赤いです？」");
         story.appendChild(document.createElement("br"));
+        appendPara("「ほら、もう。このままだと風邪ひく。行くよ」");
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "――「嫌だ。俺は⚪︎⚪︎ちゃんと一緒にここに残る。絶対に行かない！」"
-        );
+        appendPara("低く、いい声。");
         story.appendChild(document.createElement("br"));
+        appendPara("月が少し揺れて見えた。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「あはは。……先輩、可愛い」");
+        story.appendChild(document.createElement("br"));
+        appendPara("暗闇でも、耳まで赤いのが分かる。");
+        story.appendChild(document.createElement("br"));
+        appendPara("指先まで、どくどくと血が巡る。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "画面に浮かぶその言葉に、背筋がぞくりとした。 彼はやはり人形から離れるつもりがないのだ。"
-        );
+        appendPara("――私、先輩が好きだ。");
         story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "先輩と二人で、紹介された霊能者のもとを訪ねた。 静かな部屋の中で、白い衣をまとった霊能者がゆっくりと顔を上げる。"
-        );
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "「……本来なら、その人形を直接見なければどうにもできないのですが……」"
-        );
-        appendPara(
-            "「元彼が、どうしても人形を手放そうとしなくて……連れてくるのは無理でした。」 私が言うと、霊能者はしばらく黙り込んだ後、小さく頷いた。"
-        );
-        appendPara(
-            "「それならば、動画を見せてください。映像からでも“念”を読み取れることがあります。」"
-        );
-        appendPara(
-            "「じゃあ、送りますね。」自分のスマホでは怖くて再生できなかった。"
-        );
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "私は震える指でスマホを操作し、元彼から昨夜送られてきた人形の動画を選んで霊能者に転送した。 送信完了の表示が出た直後、通知が再び震えた。"
-        );
-        appendPara("「……あれ？ もう一度、同じファイルが届いた……？」");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "画面には、まったく同じファイル名の動画が二つ並んでいた。 一つ目は“1:24”。 二つ目は“1:27”。"
-        );
-        appendPara("「……同じ場面にしか見えないのに……三秒だけ長い？」");
-        appendPara("私が思わず呟くと、隣で見ていた先輩が小さく息をのんだ。");
-        appendPara("「最初に送ったものより……“増えている”ってこと？」");
-        story.appendChild(document.createElement("br"));
-        appendPara("霊能者が目を細め、低くつぶやいた。");
-        appendPara("「映像の中で、誰かが……居座っているのかもしれませんね」");
-        story.appendChild(document.createElement("br"));
-
-        story.appendChild(document.createElement("br"));
-
-        story.appendChild(document.createElement("br"));
+        appendPara("怖い夜なのに、世界が少しだけ明るくなる。");
 
         setChoices([
-            { label: "この動画を3人で確認する", next: "6a", variant: "danger" },
-            {
-                label: "他の動画を先輩と確認する",
-                next: "6b",
-                variant: "danger",
-            },
+            { label: "すると、誰かが私の肩を掴んだ", next: "6a", variant: "danger" },//先輩と元彼でバチバチエンド
+            {label: "先輩の手をとる",next: "6b",variant: "danger",},//先輩とハッピーエンド。元彼に正直な気持ちを伝える。
         ]);
-    } else if (key === "6a") {
-        appendPara(
-            "一つ目の動画には、ただ人形が映し出されているだけだった。 映像の中で元彼が、「今日も⚪︎⚪︎ちゃん、可愛いね♡」と人形に語りかけていた。"
-        );
+        
+        // hideChoices("やめておく"); // ← ここで選択肢を消す
+
+        // // バッドエンドへ遷移（別ページ）
+        // setTimeout(() => {
+        //     window.location.href = "./bad_end2.html";
+        // }, 32000);
+
+        //元彼とハッピーエンド
+    } else if (key === "5b") {
+        appendPara("");
+        appendPara("");
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "二つ目の動画を再生すると、最初の一分二十四秒は確かに全く同じ映像だった。 ボロボロの人形がソファに置かれ、じっとこちらを見ている。"
-        );
-        appendPara("「……やっぱり同じですよね？」");
-        appendPara("そう言った直後、先輩が小さく叫んだ。");
-        story.appendChild(document.createElement("br"));
-        appendPara("「ま、待って！止めて！」");
-        appendPara(
-            "最後の三秒――。 映像が突如、砂嵐のようにざらついたノイズに覆われた。 耳をつんざくような「ザザッ」という音が響き、画面が激しく揺れる。"
-        );
-        appendPara(
-            "次の瞬間、画面いっぱいに人形の顔が映し出された。 片目の空洞が、まるで画面のこちら側を覗き込むように、じわりと迫ってくる。"
-        );
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("");
+        appendPara("");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("");
+        appendPara("");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("");
+        appendPara("");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        story.appendChild(document.createElement("br"));
+        appendPara("");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
+        appendPara("");
         story.appendChild(document.createElement("br"));
 
-        appendPara("「……ひっ！」");
         story.appendChild(document.createElement("br"));
+
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "私が思わずスマホを取り落とした瞬間――。 砂嵐の奥から、掠れた低い声がはっきりと聞こえた。"
-        );
+        hideChoices("元彼に話しかける"); // ← ここで選択肢を消す
+        // 元彼とハッピーエンドへ遷移（別ページ）
+        setTimeout(() => {
+            window.location.href = "./fukuen_end2.html";
+        }, 32000);
+
+        
+    } else if (key === "6a") {
+        
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara("『……邪魔するな……』");
@@ -1145,11 +1316,10 @@ choices.addEventListener("click", (e) => {
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        hideChoices("この動画を3人で確認する"); // ← ここで選択肢を消す
-        // nomalエンドへ遷移（別ページ）
+        hideChoices("この動画を3人で確認する"); // ← ここで選択肢を
         setTimeout(() => {
-            window.location.href = "./nomal_end.html";
-        }, 8000);
+            window.location.href = "./syuraba_end.html";}, 8000);
+
     } else if (key === "6b") {
         appendPara(
             "もしかすると、他の動画でも同じ現象が起きているのかもしれない……。"
