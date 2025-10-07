@@ -481,7 +481,7 @@ choices.addEventListener("click", (e) => {
         appendPara("思わず、声が少し強くなった。");
         appendPara("先輩の言葉に、どうしようもなく苛立ちがこみ上げた。");
         story.appendChild(document.createElement("br"));
-        appendPara("「もう終わってますし、それに私にもし、他に気になる人がいたらとか、考えないんですか？」");
+        appendPara("「もう終わってますし、それに私にもし、他に良い人がいたらとか、考えないんですか？」");
         story.appendChild(document.createElement("br"));
         appendPara("「........」");
         story.appendChild(document.createElement("br"));
@@ -968,8 +968,8 @@ choices.addEventListener("click", (e) => {
         appendPara("迷った末、先輩に短くメッセージを送る。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("「すみません。今、星映湖へ向かっています。」");
-        appendPara("「なんだか嫌な感じがして……。電波弱いです。念のため。」");
+        appendPara("――すみません。今、星映湖へ向かっています。");
+        appendPara("――なんだか嫌な感じがして……。電波弱いです。念のため。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara("送信はくるくる回り、やがて「送信済み」に変わった。");
