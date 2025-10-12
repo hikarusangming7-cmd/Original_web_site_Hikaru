@@ -243,3 +243,35 @@ body { background-color: #000; }
   :root{ --brush-size: clamp(36px, 7vw, 44px); }
   .ending-title{ top: 3vh; letter-spacing:.05em; }
 }
+
+
+/*追記*/
+.ending-title {
+  text-shadow:
+    0 0.02em 0 var(--end-shadow1),
+    0 0.06em 4px rgba(0, 0, 0, 0.75),  /* ← これを追加：輪郭の陰影 */
+    0 0 8px var(--end-glow1),
+    0 0 20px var(--end-glow2),
+    0 0 35px rgba(255, 240, 120, 0.25); /* ← 発光を少し遠くまで */
+}
+
+:root {
+  --end-glow1: rgba(255, 240, 150, 0.5);
+  --end-glow2: rgba(255, 230, 100, 0.3);
+}
+
+@keyframes flash {
+  0%   { filter: brightness(1); }
+  30%  { filter: brightness(2.5); }
+  100% { filter: brightness(1); }
+}
+
+.ending-title {
+  animation: flash 1.4s ease-in-out 1;
+}
+
+/* 既存の見た目はそのまま。SVGフィルタを足すだけ */
+.ending-title--grime{
+  /* 他のCSS filterと併用OK。既存の var(--end-filter) も一緒に適用 */
+  filter: url(#ink-bleed) var(--end-filter);
+}

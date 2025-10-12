@@ -70,3 +70,35 @@ $(".dropdown-content2").on("click", "button", function (e) {
 $(document).on("click", function () {
     $(".dropdown-content2").hide();
 });
+
+
+//2025/10/11 下記追加レスポンシブ対応104行まで
+// タッチ端末だけクリック開閉を有効化（PCは何もしない）
+if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) {
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn1 = document.getElementById('menu_Btn');
+    const btn2 = document.getElementById('menu_Btn2');
+
+    btn1?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const menu = btn1.parentElement?.querySelector('.dropdown-content');
+      document.querySelectorAll('.dropdown-content, .dropdown-content2')
+        .forEach(el => { if (el !== menu) el.style.display = 'none'; });
+      if (menu) menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    });
+
+    btn2?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const menu = btn2.parentElement?.querySelector('.dropdown-content2');
+      document.querySelectorAll('.dropdown-content, .dropdown-content2')
+        .forEach(el => { if (el !== menu) el.style.display = 'none'; });
+      if (menu) menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // 画面外クリックで閉じる
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.dropdown-content, .dropdown-content2')
+        .forEach(el => el.style.display = 'none');
+    });
+  });
+}

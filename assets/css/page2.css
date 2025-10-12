@@ -118,3 +118,36 @@ body {
   .choice { padding: 12px; font-size: .95rem; }
 }
 
+
+/*2025/10/11下記追加レスポンシブ対応153行まで*/
+/* ちょい広めブレークポイントでモバイル調整 */
+@media (max-width: 768px) {
+  /* 背景の fixed をモバイルで無効化（スクロール不具合回避） */
+  .bg { 
+    background-attachment: scroll;
+  }
+
+  /* ページ余白を少し詰める */
+  .page { 
+    padding: 18px 12px calc(110px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* 選択肢：狭い画面では1列にする */
+  .choices { 
+    grid-template-columns: 1fr;
+    gap: 10px;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .choice { 
+    font-size: 1rem;         /* 可読性キープ */
+    padding: 14px 16px;
+    touch-action: manipulation; /* タップ反応を軽く */
+  }
+}
+
+/* 超狭幅（～360px想定）の微調整 */
+@media (max-width: 360px) {
+  .page { padding: 16px 10px calc(100px + env(safe-area-inset-bottom, 0px)); }
+  .choice { font-size: 0.95rem; padding: 12px; }
+}
