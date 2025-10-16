@@ -8,7 +8,7 @@
   --line:rgba(255,255,255,.07);
 }
 
-:root{ --card-h: 480px; }   /* 例：480px */
+:root{ --card-h: 500px; }   /* 例：480px */
 .card{
   height: var(--card-h);
   display:flex;             /* 中身を縦に整列 */
@@ -16,7 +16,11 @@
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
+html,body{
+  height:100%;
+  overscroll-behavior: none;
+}
+
 body{
   margin:0;
   color:var(--ink);
@@ -150,6 +154,31 @@ main{ padding:28px 20px 80px; max-width:1200px; margin:0 auto; }
   transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
 }
 
+/* ===== 赤いインナーラインを追加（既存の枠は保持） ===== */
+
+:root{
+  --accent-bd: color-mix(in oklab, var(--accent) 55%, #000 45%);
+}
+
+/* カードだけ赤みを統一（他要素は触らない） */
+.card{
+  /* 既存の box-shadow がある場合はこの行の下に追加してOK */
+  box-shadow:
+    inset 0 0 0 1px var(--accent-bd),
+    0 10px 26px rgba(0,0,0,.45); /* 既存影の例：なければ削除可 */
+}
+
+/* ホバー時は内側ラインを少し明るく（任意） */
+.card:hover{
+  box-shadow:
+    inset 0 0 0 1px var(--accent),
+    0 10px 26px rgba(0,0,0,.45),
+    0 0 36px color-mix(in oklab, var(--accent) 35%, transparent 65%);
+}
+
+.ribbon, .role{ border-color: var(--accent-bd) !important; }
+
+
 /* 矢印アイコン（SVGマスク） */
 .btn-back .btn-ico{
   width:16px; height:16px; flex:0 0 auto;
@@ -182,3 +211,9 @@ main{ padding:28px 20px 80px; max-width:1200px; margin:0 auto; }
 @media (prefers-reduced-motion: reduce){
   .btn-back{ transition:none }
 }
+
+
+
+
+
+

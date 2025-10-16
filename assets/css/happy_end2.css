@@ -1,21 +1,60 @@
+/* ====== 基本 ====== */
 * { margin: 0; }
+:root{
+  /* ここを差し替えるだけでOK */
+  --hero-image: url("/assets/img/ハッピーエンド２.png");
+  --hero-title: "Happy Ending";
+  --title-color: #fff6d8;        /* 発光の元色（温かいアイボリー） */
+  --glow-color:  #ffdb8a;        /* 外側のグロー色 */
+}
+
 body { background-color: #000; }
+.happy_end2 { min-height: 100vh; position: relative; overflow-x: hidden; }
 
-.happy_end2 { height: 100vh; }
-
+/* 背景画像 */
 .imge{
-  background-image: url(/assets/img/ハッピーエンド２.png);
+  background-image: var(--hero-image);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
+/* 文字を下部に固定配置（中央寄せ） */
+.hero-title{
+  position: absolute;
+  left: 50%;
+  bottom: 12vh;                  /* 下のボタンと重ならない余白 */
+  transform: translateX(-50%);
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-size: clamp(40px, 8vw, 112px);  /* 画面に応じて伸縮 */
+  color: var(--title-color);
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;          /* クリックを邪魔しない */
+  text-shadow:
+    0 0 6px  var(--glow-color),
+    0 0 14px var(--glow-color),
+    0 0 28px rgba(255, 200, 120, .85),
+    0 0 52px rgba(255, 160, 70,  .55);
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.5)); /* 背景との縁取り */
+}
+
+/* タイトル文字を HTML からでも CSS からでも差し替え可能に */
+.hero-title::before{
+  content: var(--hero-title);
+}
+
+/* ボタン */
 .button-container {
   position: absolute;
   left: 50%;
-  bottom: 2rem;              /* 余白を少し上に */
+  bottom: 2rem;
   transform: translateX(-50%);
+  z-index: 2;                    /* 文字より上に置きたいなら 3 に */
 }
 
 .link-button {
@@ -24,37 +63,21 @@ body { background-color: #000; }
   font-size: 20px;
   line-height: 1;
   text-decoration: none;
-  color: #2a241a;               /* くすんだインク色 */
-  background: #e6dcc7;          /* 古紙っぽい色 */
-  border: 1.5px solid #3c352a;  /* 細いインク線 */
+  color: #2a241a;
+  background: #e6dcc7;
+  border: 1.5px solid #3c352a;
   border-radius: 6px;
   font-family: "Noto Serif JP", serif;
   letter-spacing: 0.08em;
-  box-shadow:
-    0 1px 0 rgba(0,0,0,0.25) inset,
-    0 6px 18px rgba(0,0,0,0.35); /* うっすら影 */
+  box-shadow: 0 1px 0 rgba(0,0,0,.25) inset, 0 6px 18px rgba(0,0,0,.35);
   transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
-  filter: sepia(0.15) saturate(0.9); /* ほんのり古感 */
+  filter: sepia(.15) saturate(.9);
 }
+.link-button:hover { transform: translateY(-2px); box-shadow: 0 1px 0 rgba(0,0,0,.25) inset, 0 10px 22px rgba(0,0,0,.45); }
+.link-button:active{ transform: translateY(0);     box-shadow: 0 0 0 rgba(0,0,0,.25) inset, 0 4px 12px rgba(0,0,0,.35); }
 
-/* ホバー時は控えめに濃く・押し込む */
-.link-button:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 1px 0 rgba(0,0,0,0.25) inset,
-    0 10px 22px rgba(0,0,0,0.45);
-}
-
-/* クリック時は“押された”感じ */
-.link-button:active {
-  transform: translateY(0);
-  box-shadow:
-    0 0 0 rgba(0,0,0,0.25) inset,
-    0 4px 12px rgba(0,0,0,0.35);
-}
-
-/* 小さめ画面でのサイズ調整 */
 @media (max-width: 480px) {
   .link-button { font-size: 18px; padding: 10px 22px; }
-  .button-container { bottom: 2rem; }
+  .button-container { bottom: 1.6rem; }
+  .hero-title { bottom: 18vh; }  /* スマホでボタンと重ならないように少し上げる */
 }
