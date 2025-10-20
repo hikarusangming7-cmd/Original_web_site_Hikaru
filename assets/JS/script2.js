@@ -10,9 +10,9 @@ function appendPara(text) {
 //10/16追加16行まで
 // ▼ HTMLで段落を追加したい時用（strong 等を使える）
 function appendHtml(html) {
-  const p = document.createElement("p");
-  p.innerHTML = html;   // ← ここが textContent と違う点
-  story.appendChild(p);
+    const p = document.createElement("p");
+    p.innerHTML = html; // ← ここが textContent と違う点
+    story.appendChild(p);
 }
 
 // 追加：表示/非表示ヘルパー
@@ -91,9 +91,9 @@ choices.addEventListener("click", (e) => {
         );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("その瞬間――");
+        appendPara("その場から離れようとした瞬間――");
         story.appendChild(document.createElement("br"));
-        appendHtml('<strong>コトリ。</strong>');
+        appendHtml("<strong>コトリ。</strong>");
         story.appendChild(document.createElement("br"));
         appendPara("中で硬いものがぶつかる音。");
         appendPara("思わず息を呑む。");
@@ -162,7 +162,7 @@ choices.addEventListener("click", (e) => {
         appendPara("怒っているようでも、泣いているようでもない。");
         appendPara("ただ、底の見えない井戸のような声。");
         story.appendChild(document.createElement("br"));
-        appendPara("「ねぇ、なんで……捨てたの？」");
+        appendHtml("「<strong>ねぇ、なんで……捨てたの？</strong>」");
         story.appendChild(document.createElement("br"));
         appendPara("今度は、ふたつの声で重なった。");
         appendPara("彼と――人形の口元から。");
@@ -216,7 +216,7 @@ choices.addEventListener("click", (e) => {
     if (key === "2b") {
         appendPara("「……明日、彼と決着をつけよう。」 ");
         appendPara(
-            "そう決意し、私はその夜、何も知らないふりをして早めに布団に潜り込んだ。 "
+            "そう決めた私は、その夜、何も知らないふりをして、いつもより早く布団に潜り込んだ。 "
         );
         appendPara(
             "同棲を続ければ、きっと破滅が待っている。 胸の奥で、不吉な確信がじわじわと広がっていった。"
@@ -237,10 +237,11 @@ choices.addEventListener("click", (e) => {
         appendPara("ある日を境に、");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendHtml('スマートフォンに毎日届くようになった――<strong>あの人形の写真。</strong>');
+        appendHtml(
+            "スマートフォンに毎日届くようになった――<strong>あの人形の写真。</strong>"
+        );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-
 
         appendPara("「今日の⚪︎⚪︎ちゃんも、可愛いでしょ♡」");
 
@@ -265,7 +266,9 @@ choices.addEventListener("click", (e) => {
         appendPara("本人に確かめても、");
         appendPara("「そんなこと、送っていない」と言うのだった。");
         story.appendChild(document.createElement("br"));
-        appendPara("背筋が冷たくなりながら、私はスマホの画面を睨み続けていた。");
+        appendPara(
+            "背筋が冷たくなりながら、私はスマホの画面を睨み続けていた。"
+        );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -276,50 +279,78 @@ choices.addEventListener("click", (e) => {
     }
 
     if (key === "3a") {
-        appendPara(
-            "ふと頭に浮かんだ——職場に、霊感が強い先輩がいたことを。"
-        );
+        appendPara("ふと頭に浮かんだ——職場に、霊感が強い先輩がいたことを。");
         appendPara("……もしかしたら、あの人形のことも分かるかもしれない。 ");
         story.appendChild(document.createElement("br"));
-        appendPara("先輩とは普段、仕事の話しかしない。このあいだの飲み会で少しだけプライベートの話をした程度だ。");
+        appendPara(
+            "先輩とは普段、仕事の話しかしない。このあいだの飲み会で少しだけプライベートの話をした程度だ。"
+        );
         appendPara("いきなりこんなことを持ち出すのは抵抗があった。");
-        appendPara("それでも、先輩は優しい人だし、何よりこの件を自分の中だけに抱え続けるのは限界だった。");
+        appendPara(
+            "それでも、先輩は優しい人だし、何よりこの件を自分の中だけに抱え続けるのは限界だった。"
+        );
         story.appendChild(document.createElement("br"));
         appendPara("「先輩、ちょっといいですか？」");
         story.appendChild(document.createElement("br"));
         appendPara("職場で先輩を見かけ、思い切って声をかける。");
         appendPara("「ん？」");
-        appendPara("「実は相談があって……もしよければ、今日ランチご一緒できませんか？」");
+        appendPara(
+            "「実は相談があって……もしよければ、今日ランチご一緒できませんか？」"
+        );
         story.appendChild(document.createElement("br"));
         appendPara("ここでは話しづらい。場所を変えて相談したかった。");
-        appendPara("私、少し大胆すぎたかな。周りの視線が気になる——いや、誰もこちらは見ていない。");
+        appendPara(
+            "私、少し大胆すぎたかな。周りの視線が気になる——いや、誰もこちらは見ていない。"
+        );
         story.appendChild(document.createElement("br"));
-        appendPara("「もちろん。ちょうど休憩に出るところだった。ゆっくり話そう」");
+        appendPara(
+            "「もちろん。ちょうど休憩に出るところだった。ゆっくり話そう」"
+        );
         story.appendChild(document.createElement("br"));
-        appendPara("先輩はすぐに快く承諾してくれた。きっと仕事の相談だと思ったのだろう。");
+        appendPara(
+            "先輩はすぐに快く承諾してくれた。きっと仕事の相談だと思ったのだろう。"
+        );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara("――そしてランチへ――");
         story.appendChild(document.createElement("br"));
-        appendPara("「すみません、無理にお誘いしちゃって。今日は私がごちそうしますね」");
-        appendPara("気を遣わなくていいよ、と先輩は言ったが、そのほうが自分も気持ちよく相談できると押し切った。");
-        appendPara("普段から遅くまで頑張っている先輩に負担をかけたくない——せめてランチ代くらいは自分が払いたかった。");
+        appendPara(
+            "「すみません、無理にお誘いしちゃって。今日は私がごちそうしますね」"
+        );
+        appendPara(
+            "気を遣わなくていいよ、と先輩は言ったが、そのほうが自分も気持ちよく相談できると押し切った。"
+        );
+        appendPara(
+            "普段から遅くまで頑張っている先輩に負担をかけたくない——せめてランチ代くらいは自分が払いたかった。"
+        );
         story.appendChild(document.createElement("br"));
-        appendPara("少し緊張していたけれど、先輩と一緒にいると不思議と安心できる。ようやく胸の内を打ち明けられそうだ。");
+        appendPara(
+            "少し緊張していたけれど、先輩と一緒にいると不思議と安心できる。ようやく胸の内を打ち明けられそうだ。"
+        );
         story.appendChild(document.createElement("br"));
-        appendPara("「このあいだの飲み会で、先輩が不思議な体験を話してくれたじゃないですか」");
+        appendPara(
+            "「このあいだの飲み会で、先輩が不思議な体験を話してくれたじゃないですか」"
+        );
         appendPara("「ああ、あの時のことね。怖がらせてしまったよね」");
-        appendPara("「怖かったですけど……正直、とても興味深くて楽しかったんです。それで今日の相談は、そのときの先輩の“力”をお借りしたくて」");
+        appendPara(
+            "「怖かったですけど……正直、とても興味深くて楽しかったんです。それで今日の相談は、そのときの先輩の“力”をお借りしたくて」"
+        );
         appendPara("「……というと？」");
         story.appendChild(document.createElement("br"));
-        appendPara("私は今、自分が悩まされていることを先輩に打ち明け、元彼から毎日のように送られてくる人形の写真をスマホで見せた。");
+        appendPara(
+            "私は今、自分が悩まされていることを先輩に打ち明け、元彼から毎日のように送られてくる人形の写真をスマホで見せた。"
+        );
         appendPara("その瞬間、先輩の顔色がみるみる青ざめる。");
         story.appendChild(document.createElement("br"));
         appendPara("「っ……この人形は、まずい……」");
-        appendPara("そうつぶやくと、先輩は急に力が抜けたように椅子へ身を落とした。");
+        appendPara(
+            "そうつぶやくと、先輩は急に力が抜けたように椅子へ身を落とした。"
+        );
         appendPara("「せ、先輩！？　大丈夫ですか？」");
-        appendPara("「……ごめん。大丈夫——だけど、これは……ランチどころじゃない」");
+        appendPara(
+            "「……ごめん。大丈夫——だけど、これは……ランチどころじゃない」"
+        );
         story.appendChild(document.createElement("br"));
 
         setChoices([
@@ -342,7 +373,9 @@ choices.addEventListener("click", (e) => {
         appendPara(
             "「知り合いに霊能者がいる。その人なら、この人形をどうにかできるかもしれない。」"
         );
-        appendPara("そう言って先輩は少し休んだ後、スマホを取り出し、連絡先を探し始めた。");
+        appendPara(
+            "そう言って先輩は少し休んだ後、スマホを取り出し、連絡先を探し始めた。"
+        );
         story.appendChild(document.createElement("br"));
         appendPara("「紹介してもらえますか？」");
         appendPara(
@@ -363,8 +396,9 @@ choices.addEventListener("click", (e) => {
         ]);
     } else if (key === "5a") {
         appendPara(
-            "先輩が紹介してくれた霊能者は、「その人形と持ち主を直接見ないと、正確には分からない」と言った。 つまり――元彼と、あの人形を連れていかなければならない。"
+            "先輩が紹介してくれた霊能者は、「その人形と持ち主を直接見ないと、正確には分からない」と言った。 "
         );
+        appendPara("つまり――元彼とあの人形を連れていかなければならない。");
         story.appendChild(document.createElement("br"));
         appendPara(
             "考えただけで全身が震えた。 人形を目の前に置くことも、ましてや元彼と一緒に出向くことなど到底できない。"
@@ -396,7 +430,8 @@ choices.addEventListener("click", (e) => {
         appendPara(
             "「最近全然LINE見てくれないから、来ちゃったよ。この子、実物は写真よりもっと可愛いでしょ？"
         );
-        appendPara("ねぇ、可愛いって言ってよ……。ねぇ……。ねぇ……。」");
+        story.appendChild(document.createElement("br"));
+        appendHtml("<strong>ねぇ、可愛いって言ってよ……。ねぇ……。ねぇ……。</strong>」");
 
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -423,24 +458,26 @@ choices.addEventListener("click", (e) => {
         }, 32000);
     } else if (key === "5b") {
         appendPara("私は思い切って、元彼にメッセージを送った。");
-        appendPara("――「霊能者に相談に行くから、人形と一緒に来てほしい」");
+        appendPara("――『霊能者に相談に行くから、人形と一緒に来てほしい』");
         story.appendChild(document.createElement("br"));
         appendPara("しばらくして返事が届く。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("――「俺と⚪︎⚪︎ちゃんを引き離すつもりなんだろ。」");
-        appendPara("――「やっぱり最低だな。別れて正解だった」");
+        appendPara("――『俺と⚪︎⚪︎ちゃんを引き離すつもりなんだろ。』");
+        appendPara("――『最低だな。別れて正解だった』");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara("もう元彼に未練はない。");
-        appendPara("それでも画面に浮かぶその理不尽な言葉に、胸がちくりと傷んだ。");
+        appendPara(
+            "それでも画面に浮かぶその理不尽な言葉に、胸がちくりと傷んだ。"
+        );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara(
-            "先輩と二人で、紹介された霊能者のもとを訪ねた。 静かな部屋の中で、白い衣をまとった霊能者がゆっくりと顔を上げる。"
+            "週末、先輩と二人で紹介された霊能者のもとを訪ねた。 静かな部屋の中で、白い衣をまとった霊能者がゆっくりと顔を上げる。"
         );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -448,10 +485,13 @@ choices.addEventListener("click", (e) => {
             "「……本来なら、その人形を直接見なければどうにもできないのですが……」"
         );
         appendPara(
-            "「元彼が、どうしても人形を手放そうとしなくて……連れてくるのは無理でした。」 ");
+            "「元彼が、どうしても行きたくないって。連れてくるのは無理でした。」 "
+        );
         appendPara("私が言うと、霊能者はしばらく黙り込んだ後、小さく頷いた。");
         story.appendChild(document.createElement("br"));
-        appendPara("「それならば、私のほうに動画を送っていただけませんか？映像からでも“念”を読み取れることがあります。」");
+        appendPara(
+            "「それならば、私のほうに動画を送っていただけませんか？映像からでも“念”を読み取れることがあります。」"
+        );
         appendPara("「じゃあ、送りますね。」");
         story.appendChild(document.createElement("br"));
         appendPara(
@@ -464,10 +504,14 @@ choices.addEventListener("click", (e) => {
             "画面には、まったく同じファイル名の動画が二つ並んでいた。 一つ目は“1:24”。 二つ目は“1:27”。"
         );
         appendPara("「どういうこと？何で複製ファイルが。」");
-        appendPara("私が思わず呟くと、隣で見ていた先輩が小さく息をのんで言った。");
+        appendPara(
+            "私が思わず呟くと、隣で見ていた先輩が小さく息をのんで言った。"
+        );
         appendPara("「そのビデオ、確認してみない？二つ、何が違うのか……」");
         appendPara("「えっ……」");
-        appendPara("「怖いなら、俺たちで確認するよ。特に3秒長いほうは、もしかしたら君は見ないほうがいいかもしれない」");
+        appendPara(
+            "「怖いなら、俺たちで確認するよ。特に3秒長いほうは、もしかしたら君は見ないほうがいいかもしれない」"
+        );
         appendPara("「先輩……」");
         story.appendChild(document.createElement("br"));
         appendPara("すると霊能者が目を細め、低くつぶやいた。");
@@ -516,7 +560,7 @@ choices.addEventListener("click", (e) => {
         );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("『……邪魔するな……』");
+        appendHtml("『<strong>……邪魔するな……</strong>』");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara("心臓が激しく脈打ち、私は息を呑んだ。 これは、人形の声……");
@@ -546,8 +590,9 @@ choices.addEventListener("click", (e) => {
         appendPara("「……え？ 引っ越した？」");
 
         story.appendChild(document.createElement("br"));
+        appendPara("すでに部屋は退去済みで、彼の姿はどこにもなかった。 ");
         appendPara(
-            "すでに部屋は退去済みで、彼の姿はどこにもなかった。 行方はわからない。ただひとつ確かなのは――今もどこかで人形と一緒にいる、ということだけだった。"
+            "行方はわからない。ただひとつ確かなのは――今もどこかで人形と一緒にいる、ということだけだった。"
         );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -568,16 +613,16 @@ choices.addEventListener("click", (e) => {
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara(
-            "毎日のように元彼から聞かされていたはずなのに、どうしても思い出せない。 すんなり耳に入っていたくらいだから、きっと特別な名前ではなく、一般的な名前だったのだろう。"
+            "毎日のように元彼から嫌になるほど聞かされていたはずなのに、どうしても思い出せない。 すんなり耳に入っていたくらいだから、きっと特別な名前ではなく、一般的な名前だったのだろう。"
         );
         appendPara(
-            "「⚪︎⚪︎ちゃん、今日も可愛い」――わかりやすい彼の口癖なのに。肝心の名前が思い出せない。"
+            "「⚪︎⚪︎ちゃん、今日も可愛い」――わかりやすい彼の口癖。なのに肝心の名前が思い出せない。"
         );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara(
-            "念のため、先輩や霊能者の方にも尋ねてみた。だが、誰一人として人形の名前を覚えてはいなかった。"
+            "先輩や霊能者の方にも尋ねてみた。だが、誰一人として人形の名前を覚えてはいなかった。"
         );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -587,19 +632,16 @@ choices.addEventListener("click", (e) => {
         // nomalエンドへ遷移（別ページ）
         setTimeout(() => {
             window.location.href = "./nomal_end.html";
-        }, 8000);
+        }, 60000);
     } else if (key === "6b") {
         appendPara(
             "もしかすると、他の動画でも同じ現象が起きているのかもしれない……。"
         );
         appendPara(
-            "私は別れてから送られてきた動画をちゃんと見返していなかった。 隣に先輩がいたため勇気を出して昨夜の動画を再生すると、そこには薄暗く荒れ果てた部屋が映っていた。"
+            "昨夜他に送られてきた動画を再生すると、そこには薄暗く荒れ果てた部屋が映っていた。"
         );
         appendPara("「その動画はさっきとはまた別のもの？」");
         appendPara("「はい。他の動画はどうなのか、ふと気になって」");
-        appendPara(
-            "その動画は⚪︎⚪︎ちゃんを褒め称えているだけのものだったが、画面の端に一瞬だけ小さな手――おそらくあの人形の手が写り込んだ。"
-        );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara(
@@ -633,14 +675,6 @@ choices.addEventListener("click", (e) => {
         appendPara("「俺が悪かったよ。」");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "ここで元彼が全く喋らなくなった。そして、動画は進み、昨夜の動画のラストシーンに映っていたものが映し出される。"
-        );
-
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara("その瞬間、全く喋らなくなっていた元彼が急に喋り出す。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -686,17 +720,15 @@ choices.addEventListener("click", (e) => {
         appendPara("「ぎゃっ！！」思わずスマホを落としてしまった。");
         story.appendChild(document.createElement("br"));
         appendPara(
-            "そして動画はここで終わったはずだった。が、なぜかリピート再生された。"
+            "そして動画はここで終わったはずだった。が、自動的にリピート再生された。"
         );
-        appendPara(
-            "そして、最後のシーン。まだ続きがあったのだ。"
-        );
+        appendPara("そして、最後のシーン。まだ続きがあったのだ。");
         story.appendChild(document.createElement("br"));
 
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("「____どうして助けてくれなかったんだよ。」");
+        appendHtml("「<strong>____どうして助けてくれなかったんだよ。</strong>」");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -752,19 +784,22 @@ choices.addEventListener("click", (e) => {
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara(
-            "胸の奥が熱くなる。恐怖もあったけれど、それ以上に“彼が自分の意思で闇を断ち切った”ことへの安堵が勝った。"
+            "胸の奥が熱くなる。恐怖もあったけれど、それ以上に"
         );
+        appendPara("“彼が自分の意思で闇を断ち切った”ことへの安堵が勝った。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("「……考えさせて。でも、また会って話そう」 私はそう答えた。");
+        appendPara(
+            "「すぐには良い返事はできない……でも、また話そう」 私はそう答えた。"
+        );
 
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("人形は霊能者によって完全に祓われ、怪異は収まった。");
-        appendPara(
-            "元彼は正気を取り戻し、私たちの関係は再び繋がろうとしている。"
-        );
+        appendPara("人形は霊能者によって完全に祓われ、怪異は収まり、元彼は正気を取り戻した。");
+        appendPara("いつか、私たちの関係も再び繋がる日が来るのかもしれない。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
         appendPara("ただ――あの人形の笑みだけは、心の奥で消えてはいなかった。");
 
         story.appendChild(document.createElement("br"));
@@ -775,7 +810,7 @@ choices.addEventListener("click", (e) => {
         // ハッピーエンドへ遷移（別ページ）
         setTimeout(() => {
             window.location.href = "./fukuen_end.html";
-        }, 30000);
+        }, 45000);
     } else if (key === "7b") {
         appendPara(
             "恐怖の動画を見終えた後、私は震える手を隠しながら、先輩に家まで送ってもらった。"
@@ -798,14 +833,17 @@ choices.addEventListener("click", (e) => {
         story.appendChild(document.createElement("br"));
 
         appendPara(
-            "数日後、元彼から荷物が届いた。 一人では開ける勇気がなく、また先輩に頼んで一緒に確認してもらうことにした。"
+            "数日後、元彼から急に荷物が届いた。 一人では開ける勇気がなく、また先輩に頼んで一緒に確認してもらうことにした。"
         );
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara(
-            "箱を開けると、中には――あの人形が入っていた。 血の気が引いたが、先輩がすぐに「霊能者に持って行こう」と言ってくれ、そのまま一緒にお祓いを依頼した。"
-        );
-        appendPara("人形は浄化され、それ以降怪異は起こらなかった。");
+        appendPara("箱を見るなり先輩が一言言った。");
+        appendPara("「これは開けないほうがいい。中身は人形だ。」");
+        appendPara("「えっ……」");
+        appendPara("「霊能者のところへ持っていこう。」");
+        story.appendChild(document.createElement("br"));
+        appendPara("霊能者の元へ二人で行きお祓いを依頼した。先輩の言う通り、やはり中身は人形だった。");
+        appendPara("その後人形は浄化され、それ以降怪異は起こらなくなった。");
 
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -825,7 +863,8 @@ choices.addEventListener("click", (e) => {
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara("穏やかな昼下がり、緊張よりも心地よさが勝っていた。 ");
-        appendPara("人形の恐怖は消え去ったけれど、代わりに___先輩との距離が少しずつ近づいているのを、私ははっきりと感じていた。");
+        appendPara("人形の恐怖は消え去り、代わりに____");
+        appendPara("先輩との距離が少しずつ近づいているのを私ははっきりと感じていた。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara("怪異は終わりを告げ、日常が戻った。");
@@ -840,26 +879,36 @@ choices.addEventListener("click", (e) => {
         // ハッピーエンドへ遷移（別ページ）
         setTimeout(() => {
             window.location.href = "./happy_end2.html";
-        }, 31000);
+        }, 40000);
     } else if (key === "3b") {
         appendPara("私は一人で抱え込んでしまった。");
         story.appendChild(document.createElement("br"));
         appendPara("毎日届く、人形の写真。");
         appendPara(
-            "「今日の⚪︎⚪︎ちゃんも可愛い♡」というお決まりのメッセージ。"
+            "『今日の○○ちゃんも可愛い♡』——そのお決まりの言葉が、友人や同僚、家族からまで届くようになった。"
         );
         appendPara(
             "ブロックしても、削除しても、必ず翌日には復活して届く。 まるで、逃げ場など最初から存在しないかのように。"
         );
         story.appendChild(document.createElement("br"));
         appendPara(
-            "最初は「ただの嫌がらせだ」と自分に言い聞かせていた。 だが、日に日に心がすり減っていくのが分かった。 夜になると、人形が枕元に立っている幻覚まで見るようになり、眠ることすらできなくなった。"
+            "最初は「ただの悪戯だ」と自分に言い聞かせていた。 だが、日に日に心がすり減っていくのが分かった。 "
         );
+        appendPara(
+            "夜になると、枕元にあの人形と同じ姿の人が立っている幻を見る。目を閉じても、その微笑が瞼の裏に焼きついて離れない。"
+        );
+        appendPara(
+            "そして夢の中では、元彼だけでなく、知り合いのすべてが人形に魅入られていく。気づけば、誰の瞳にも同じ虚ろな光が宿っていた。"
+        );
+        appendPara("そのうち私は眠ることすらできなくなった。");
+        story.appendChild(document.createElement("br"));
+        appendPara("とうとう、SNSのフォロワー、フォローしている相手までもが全員⚪︎⚪︎ちゃんの写真をアイコンにし始めた。");
+        appendPara("投稿内容も○○ちゃんの話題ばかり。");  
+        appendPara("やがて「○○ちゃんメイク」が流行し、街には○○ちゃんと同じ格好をした人々が、次々と現れるようになった。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-
-        appendPara("ある朝、気づけば私は真っ白な病室のベッドの上にいた。");
+        appendPara("___ある朝、気づけば私は真っ白な病室のベッドの上にいた。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara(
@@ -878,17 +927,50 @@ choices.addEventListener("click", (e) => {
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("――「今日の⚪︎⚪︎ちゃんも可愛い♡」");
-
+        appendPara("――『今日の⚪︎⚪︎ちゃんも可愛い♡』");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("「……っ、あぁ、ああああああああああ――！！！」");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("喉が裂けるほどの音が出たのに、誰も来ない。");
+        appendPara("代わりに、スマホの画面だけが、白く光り続けていた。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("――『⚪︎⚪︎ちゃんと結婚したい。』");
+        appendPara("――『⚪︎⚪︎ちゃんすごく美人だと思わない？』");
+        appendPara("――『⚪︎⚪︎ちゃんっておしゃれでセンスあるよね。』");
+        appendHtml("――『⚪︎⚪︎ちゃんってほんと癒される。<strong>そう思うよね？ねえ？</strong>』");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("私は反射的にスマホを握り、床に投げつけた。");
+        appendPara("震えは止まらない。ひびの奥で画面がまた明滅し、あの文字列が割れたガラスに増殖するみたいに映り込む。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendHtml("——『<strong>今日の○○ちゃんも可愛い♡</strong>』");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara("その瞬間、病室の隅から、笑い声が聞こえた気がした。");
+        story.appendChild(document.createElement("br"));
+        appendPara("もう逃げ場はない。この真っ白な部屋が⚪︎⚪︎ちゃんで埋め尽くされる日もそう遠くはないはずだ。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
         hideChoices("我慢する"); // ← ここで選択肢を消す
         // バッドエンドへ遷移（別ページ）
         setTimeout(() => {
             window.location.href = "./bad_end.html";
-        }, 43000);
+        }, 55000);
     } else if (key === "4b") {
         appendPara("先輩の声は震えていた。");
         story.appendChild(document.createElement("br"));
@@ -909,7 +991,7 @@ choices.addEventListener("click", (e) => {
         );
         appendPara("「……ああ……入ってくる……こっちに……！」");
         appendPara(
-            "低い叫び声とともに、先輩の視線がふっと私を外れた。 代わりに――スマホの画面の中、人形の瞳と目が合った気がした。"
+            "低い叫び声とともに、先輩の視線がふっと私を外れた。 代わりにスマホの画面の中、人形の瞳と目が合った気がした。"
         );
         story.appendChild(document.createElement("br"));
         appendPara(
