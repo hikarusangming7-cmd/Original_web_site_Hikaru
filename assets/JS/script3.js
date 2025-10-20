@@ -284,7 +284,7 @@ choices.addEventListener("click", (e) => {
         appendPara("彼はゆっくりと近づき、耳元で囁いた。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("「ねぇ……ちゃんと見てたんでしょ？ あの夜、僕と先輩のこと。」");
+        appendPara("「ねぇ……ちゃんと見てたんでしょ？ あの夜、俺と先輩のこと。」");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara("心臓が凍りつく。");
@@ -292,7 +292,7 @@ choices.addEventListener("click", (e) => {
         appendPara("声を出そうとしても、喉が固まって動かない。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("「大丈夫。僕が守ってあげるから。」");
+        appendPara("「大丈夫。俺が守ってあげるから。」");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara("――その言葉が、恐怖の合図だった。");     
@@ -734,7 +734,7 @@ choices.addEventListener("click", (e) => {
         appendPara("そのとき――かすかな鈴の音が、水面の方から聞こえた。");
         story.appendChild(document.createElement("br"));
         appendPara("風ではない。");
-        appendPara("お経にも似た、低い声が混じっていた。");
+        appendPara("祈りやお経にも似た、低い声が混じっていた。");
         story.appendChild(document.createElement("br"));
         appendPara("ぞくり、と背筋に冷たいものが走る。");
         story.appendChild(document.createElement("br"));

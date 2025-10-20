@@ -361,7 +361,141 @@ choices.addEventListener("click", (e) => {
                 variant: "danger",
             },
         ]);
-    } else if (key === "4a") {
+    } else if (key === "3b") {
+        appendPara("私は一人で抱え込んでしまった。");
+        story.appendChild(document.createElement("br"));
+        appendPara("毎日届く、人形の写真。");
+        appendPara(
+            "『今日の○○ちゃんも可愛い♡』——そのお決まりの言葉が、友人や同僚、家族からまで届くようになった。"
+        );
+        appendPara(
+            "ブロックしても、削除しても、必ず翌日には復活して届く。 まるで、逃げ場など最初から存在しないかのように。"
+        );
+        story.appendChild(document.createElement("br"));
+        appendPara(
+            "最初は「ただの悪戯だ」と自分に言い聞かせていた。 だが、日に日に心がすり減っていくのが分かった。 "
+        );
+        appendPara(
+            "夜になると、枕元にあの人形と同じ姿の人が立っている幻を見る。目を閉じても、その微笑が瞼の裏に焼きついて離れない。"
+        );
+        appendPara(
+            "そして夢の中では、元彼だけでなく、知り合いのすべてが人形に魅入られていく。気づけば、誰の瞳にも同じ虚ろな光が宿っていた。"
+        );
+        appendPara("そのうち私は眠ることすらできなくなった。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("とうとう、SNSのフォロワー、フォローしている相手までもが全員⚪︎⚪︎ちゃんの写真をアイコンにし始めた。");
+        appendPara("投稿内容も○○ちゃんの話題ばかり。");  
+        appendPara("やがて「○○ちゃんメイク」が流行し、街には○○ちゃんと同じ格好をした人々が、次々と現れるようになった。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("___ある朝、気づけば私は真っ白な病室のベッドの上にいた。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara(
+            "「疲れが限界を超えて、発作のように倒れたんですよ」と医師は言った。"
+        );
+        appendPara("その日から私は、この病院から出られなくなった。");
+
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara(
+            "消灯時間を過ぎた深夜。 ナースコールの光がぼんやり瞬く病室で、私のスマホが震える。"
+        );
+        appendPara("画面に浮かんだのは、見慣れた一文。");
+
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("――『今日の⚪︎⚪︎ちゃんも可愛い♡』");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("「……っ、あぁ、ああああああああああ――！！！」");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("喉が裂けるほどの音が出たのに、誰も来ない。");
+        appendPara("代わりに、スマホの画面だけが、白く光り続けていた。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("――『⚪︎⚪︎ちゃんと結婚したい。』");
+        appendPara("――『⚪︎⚪︎ちゃんすごく美人だと思わない？』");
+        appendPara("――『⚪︎⚪︎ちゃんっておしゃれでセンスあるよね。』");
+        appendHtml("――『⚪︎⚪︎ちゃんってほんと癒される。<strong>そう思うよね？ねえ？</strong>』");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("私は反射的にスマホを握り、床に投げつけた。");
+        appendPara("震えは止まらない。ひびの奥で画面がまた明滅し、あの文字列が割れたガラスに増殖するみたいに映り込む。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendHtml("——『<strong>今日の○○ちゃんも可愛い♡</strong>』");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("その瞬間、病室の隅から、笑い声が聞こえた気がした。");
+        story.appendChild(document.createElement("br"));
+        appendPara("もう逃げ場はない。この真っ白な部屋が⚪︎⚪︎ちゃんで埋め尽くされる日もそう遠くはないはずだ。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        hideChoices("我慢する"); // ← ここで選択肢を消す
+        // バッドエンドへ遷移（別ページ）
+        setTimeout(() => {
+            window.location.href = "./bad_end.html";
+        }, 55000);
+    } else if (key === "4b") {
+        appendPara("先輩の声は震えていた。");
+        story.appendChild(document.createElement("br"));
+        appendPara("「……念が……重すぎる……これ以上は……」");
+        story.appendChild(document.createElement("br"));
+        appendPara(
+            "普通なら、ここでやめておくべきだったのだろう。 けれど私は焦っていた。 毎日届く人形の写真に耐えきれず、救いを求める気持ちが先走ってしまった。"
+        );
+        story.appendChild(document.createElement("br"));
+        appendPara("「ほら、まだあるんです！見てください！」");
+        appendPara(
+            "次々とスマホの画面をスクロールし、人形の写真を先輩に見せつけた。"
+        );
+
+        appendPara("「やめろ……やめてくれ……！」");
+        appendPara(
+            "先輩は頭を抱え、椅子から転げ落ちるように床に座り込んだ。 顔は土気色に変わり、虚ろな目が天井を彷徨う。"
+        );
+        appendPara("「……ああ……入ってくる……こっちに……！」");
+        appendPara(
+            "低い叫び声とともに、先輩の視線がふっと私を外れた。 代わりにスマホの画面の中、人形の瞳と目が合った気がした。"
+        );
+        story.appendChild(document.createElement("br"));
+        appendPara(
+            "次の瞬間、先輩は意味不明の言葉を吐き続け、制御のきかない笑い声を漏らし始めた。 その姿に背筋が凍りつく。"
+        );
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendPara("――結局、先輩は精神を壊し、職場に戻ることはなかった。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+
+        story.appendChild(document.createElement("br"));
+        hideChoices("先輩にさらに写真を見せる"); // ← ここで選択肢を消す
+        setTimeout(() => {
+            window.location.href = "./bad_end.html";
+        }, 37000);}
+    
+    else if (key === "4a") {
         appendPara("先輩は額に手を当て、苦しそうに目を閉じていた。");
         appendPara("「先輩、本当に大丈夫ですか？」");
         story.appendChild(document.createElement("br"));
@@ -431,7 +565,13 @@ choices.addEventListener("click", (e) => {
             "「最近全然LINE見てくれないから、来ちゃったよ。この子、実物は写真よりもっと可愛いでしょ？"
         );
         story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
         appendHtml("<strong>ねぇ、可愛いって言ってよ……。ねぇ……。ねぇ……。</strong>」");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
 
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -880,137 +1020,6 @@ choices.addEventListener("click", (e) => {
         setTimeout(() => {
             window.location.href = "./happy_end2.html";
         }, 40000);
-    } else if (key === "3b") {
-        appendPara("私は一人で抱え込んでしまった。");
-        story.appendChild(document.createElement("br"));
-        appendPara("毎日届く、人形の写真。");
-        appendPara(
-            "『今日の○○ちゃんも可愛い♡』——そのお決まりの言葉が、友人や同僚、家族からまで届くようになった。"
-        );
-        appendPara(
-            "ブロックしても、削除しても、必ず翌日には復活して届く。 まるで、逃げ場など最初から存在しないかのように。"
-        );
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "最初は「ただの悪戯だ」と自分に言い聞かせていた。 だが、日に日に心がすり減っていくのが分かった。 "
-        );
-        appendPara(
-            "夜になると、枕元にあの人形と同じ姿の人が立っている幻を見る。目を閉じても、その微笑が瞼の裏に焼きついて離れない。"
-        );
-        appendPara(
-            "そして夢の中では、元彼だけでなく、知り合いのすべてが人形に魅入られていく。気づけば、誰の瞳にも同じ虚ろな光が宿っていた。"
-        );
-        appendPara("そのうち私は眠ることすらできなくなった。");
-        story.appendChild(document.createElement("br"));
-        appendPara("とうとう、SNSのフォロワー、フォローしている相手までもが全員⚪︎⚪︎ちゃんの写真をアイコンにし始めた。");
-        appendPara("投稿内容も○○ちゃんの話題ばかり。");  
-        appendPara("やがて「○○ちゃんメイク」が流行し、街には○○ちゃんと同じ格好をした人々が、次々と現れるようになった。");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara("___ある朝、気づけば私は真っ白な病室のベッドの上にいた。");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "「疲れが限界を超えて、発作のように倒れたんですよ」と医師は言った。"
-        );
-        appendPara("その日から私は、この病院から出られなくなった。");
-
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "消灯時間を過ぎた深夜。 ナースコールの光がぼんやり瞬く病室で、私のスマホが震える。"
-        );
-        appendPara("画面に浮かんだのは、見慣れた一文。");
-
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara("――『今日の⚪︎⚪︎ちゃんも可愛い♡』");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara("「……っ、あぁ、ああああああああああ――！！！」");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara("喉が裂けるほどの音が出たのに、誰も来ない。");
-        appendPara("代わりに、スマホの画面だけが、白く光り続けていた。");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara("――『⚪︎⚪︎ちゃんと結婚したい。』");
-        appendPara("――『⚪︎⚪︎ちゃんすごく美人だと思わない？』");
-        appendPara("――『⚪︎⚪︎ちゃんっておしゃれでセンスあるよね。』");
-        appendHtml("――『⚪︎⚪︎ちゃんってほんと癒される。<strong>そう思うよね？ねえ？</strong>』");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara("私は反射的にスマホを握り、床に投げつけた。");
-        appendPara("震えは止まらない。ひびの奥で画面がまた明滅し、あの文字列が割れたガラスに増殖するみたいに映り込む。");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendHtml("——『<strong>今日の○○ちゃんも可愛い♡</strong>』");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara("その瞬間、病室の隅から、笑い声が聞こえた気がした。");
-        story.appendChild(document.createElement("br"));
-        appendPara("もう逃げ場はない。この真っ白な部屋が⚪︎⚪︎ちゃんで埋め尽くされる日もそう遠くはないはずだ。");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        hideChoices("我慢する"); // ← ここで選択肢を消す
-        // バッドエンドへ遷移（別ページ）
-        setTimeout(() => {
-            window.location.href = "./bad_end.html";
-        }, 55000);
-    } else if (key === "4b") {
-        appendPara("先輩の声は震えていた。");
-        story.appendChild(document.createElement("br"));
-        appendPara("「……念が……重すぎる……これ以上は……」");
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "普通なら、ここでやめておくべきだったのだろう。 けれど私は焦っていた。 毎日届く人形の写真に耐えきれず、救いを求める気持ちが先走ってしまった。"
-        );
-        story.appendChild(document.createElement("br"));
-        appendPara("「ほら、まだあるんです！見てください！」");
-        appendPara(
-            "次々とスマホの画面をスクロールし、人形の写真を先輩に見せつけた。"
-        );
-
-        appendPara("「やめろ……やめてくれ……！」");
-        appendPara(
-            "先輩は頭を抱え、椅子から転げ落ちるように床に座り込んだ。 顔は土気色に変わり、虚ろな目が天井を彷徨う。"
-        );
-        appendPara("「……ああ……入ってくる……こっちに……！」");
-        appendPara(
-            "低い叫び声とともに、先輩の視線がふっと私を外れた。 代わりにスマホの画面の中、人形の瞳と目が合った気がした。"
-        );
-        story.appendChild(document.createElement("br"));
-        appendPara(
-            "次の瞬間、先輩は意味不明の言葉を吐き続け、制御のきかない笑い声を漏らし始めた。 その姿に背筋が凍りつく。"
-        );
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        appendPara("――結局、先輩は精神を壊し、職場に戻ることはなかった。");
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-        story.appendChild(document.createElement("br"));
-
-        story.appendChild(document.createElement("br"));
-        hideChoices("先輩にさらに写真を見せる"); // ← ここで選択肢を消す
-        setTimeout(() => {
-            window.location.href = "./bad_end.html";
-        }, 37000);
+    } 
     }
-});
+);
