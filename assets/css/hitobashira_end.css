@@ -1,10 +1,10 @@
 * { margin: 0; }
 body { background-color: #000; }
 
-.happy_end { height: 100vh; }
+.nomal_end { height: 100vh; }
 
 .imge{
-  background-image: url(/assets/img/復縁エンド.png);
+  background-image: url(/assets/img/人柱エンド.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -60,15 +60,13 @@ body { background-color: #000; }
 }
 
 
-/*10/10　下記追加
-/* ===== ボタン：3秒後にふわっと出現（スライド＋ぼかし解除＋軽い拡大） ===== */
 .button-container{
   /* 位置の指定は既存どおり */
   opacity: 0;                                   /* 最初は見せない */
   transform: translateX(-50%) translateY(8px) scale(.98);
   filter: blur(6px);
   pointer-events: none;                          /* 出現前はクリック不可 */
-  animation: btnIntro .9s cubic-bezier(.2,.8,.2,1) 2s forwards;
+  animation: btnIntro .9s cubic-bezier(.2,.8,.2,1) 3s forwards;
   /* ↑ 0.9秒のアニメーションを 3s 後に開始。最後の状態を保持(forwards) */
 }
 

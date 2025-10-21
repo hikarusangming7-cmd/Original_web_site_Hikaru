@@ -1,0 +1,159 @@
+.relation{
+  position: relative;
+  width: min(1000px, 92vw);
+  height: 620px; /* SVGのviewBoxと合わせる */
+  margin: 40px auto;
+  background: #0b0b0b;
+  border: 1px solid #333;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* 画像ノード */
+.node{
+  position: absolute;
+  width: 150px;               /* 画像サイズは調整可 */
+  text-align: center;
+  color: #e5e7eb;
+  font-family: "Noto Sans JP", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+.node img{
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 8px 22px rgba(0,0,0,.5);
+}
+.node .label{
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+/* 初期配置（座標は必要に応じて微調整） */
+.n-hero   { left: 260px; top: 120px; }  /* 私 */
+.n-ex     { left: 700px; top: 120px; }  /* 元彼 */
+.n-senpai { left: 120px; top: 420px; }  /* 先輩 */
+.n-doll   { left: 760px; top: 420px; }  /* ⚪︎⚪︎ちゃん */
+
+/* 矢印（SVG） */
+.relation .links{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.relation line{
+  stroke: #60a5fa;           /* 線色（青） */
+  stroke-width: 3.5;
+  opacity: .95;
+}
+.relation marker path{
+  fill: #60a5fa;             /* 矢印ヘッドの色 */
+}
+
+/* ラベル（SVGのtext） */
+.relation text{
+  fill: #c7d2fe;
+  font-size: 15px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: rgba(0,0,0,.55);   /* 縁取りで可読性UP */
+  stroke-width: 3;
+}
+
+/* モバイル簡略化（線を消して縦積み） */
+@media (max-width: 740px){
+  .relation{
+    height: auto;
+    padding: 16px 0 28px;
+  }
+  .node{
+    position: static;
+    margin: 16px auto;
+  }
+  .relation .links{
+    display: none;
+  }
+}
+
+/* dialogのベース */
+#characterDialog {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+#characterDialog::backdrop {
+  background: rgba(0,0,0,.6);
+}
+
+/* カード */
+.char-card{
+  width: min(640px, 92vw);
+  background: #0f1115;
+  color: #e5e7eb;
+  border: 1px solid #2a2f3a;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+  overflow: hidden;
+  font-family: "Noto Sans JP", system-ui, sans-serif;
+}
+
+.char-card header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: linear-gradient(180deg, #10131a 0%, #0b0d12 100%);
+  border-bottom: 1px solid #222838;
+}
+
+.char-card h3{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.char-card .close{
+  appearance: none;
+  border: 1px solid #394154;
+  background: #131722;
+  color: #e5e7eb;
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.char-card .close:hover{ filter: brightness(1.1); }
+
+.char-body{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+#charImage{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 8px 22px rgba(0,0,0,.45);
+}
+
+#charDesc{
+  margin: 0;
+  line-height: 1.9;
+  font-size: 15px;
+  color: #d8dee9;
+}
+
+/* スマホ */
+@media (max-width: 520px){
+  .char-body{
+    grid-template-columns: 1fr;
+  }
+}

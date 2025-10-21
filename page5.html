@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>運命怪談｜キャラクター紹介</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- 外部CSS -->
+ <link rel="stylesheet" href="assets/css/page5.css">
+</head>
+<body>
+  <header>
+    
+    <h1>運命怪談　キャラクター紹介</h1>
+    <span class="ribbon">ー静女ヶ淵（しずめがふち）編ー</span>
+    
+  </header>
+
+  <main>
+    <section class="grid" aria-label="キャラクター一覧">
+      <!-- 1 -->
+      <article class="card is-wide">
+        <div class="thumb">
+          <img src="./assets/img/女性.png" alt="ヒロイン画像" loading="lazy">
+        </div>
+        <div class="content">
+          <h2 class="name">私<span class="role">ヒロイン</span></h2>
+          <p class="desc">人形事件が解決してからは平和な日々を送っていたが、再び事件に巻き込まれることになる。先輩と良い雰囲気である一方で、以前の優しい眼差しに戻った元彼に対して複雑な思いを抱いている。</p>
+          <ul class="meta">
+            <li class="tag"></li>
+            <li class="tag"></li>
+            <li class="tag"><span class="glow"></span></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="thumb">
+          <img src="./assets/img/元彼.png" alt="元彼の画像" loading="lazy">
+        </div>
+        <div class="content">
+          <h2 class="name">元彼<span class="role">"私"の元彼</span></h2>
+          <p class="desc">一時期⚪︎⚪︎ちゃんという日本人形にマインドコントロールされていたことで"私"と別れてしまい、そのことを後悔している。"私"と先輩の関係に薄々勘づいており、わざと先輩にぶつかりに行って知り合った。恋愛相談をして牽制している。</p>
+          <ul class="meta">
+            
+            <li class="tag"></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <div class="thumb">
+          <img src="./assets/img/主人公.png" alt="先輩の写真" loading="lazy">
+        </div>
+        <div class="content">
+          <h2 class="name">先輩 <span class="role">霊媒体質</span></h2>
+          <p class="desc">"私"の職場の先輩。人形をきっかけに"私"と親しくなった。お互いに意識しているものの、交際には至っていない。"私"の元彼から復縁の相談を受けるようになり、自分の気持ちと板挟みになりつつも応援している。</p>
+          <ul class="meta">
+            <li class="tag"></li>
+            <li class="tag"></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <div class="thumb">
+          <img src="./assets/img/伝説の尼さん.png" alt="伝説の尼さん" loading="lazy">
+        </div>
+        <div class="content">
+          <h2 class="name">尼さん<span class="role">伝説の尼さん</span></h2>
+          <p class="desc">村のために尽くしたものの、最終的に村人たちに裏切られ人柱として湖に生きたまま沈められた。亡霊になった今も自分の代わりに人柱になってくれる女性を探しており、今まで何人もの女性を犠牲にしてきた。</p>
+          <ul class="meta">
+            <li class="tag">女性だけを狙う</li>
+            <li class="tag">亡霊</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      
+      </article>
+    </section>
+  </main>
+
+  <footer>
+  <div class="footer-inner">
+    <a href="./index.html" class="btn-back" aria-label="前のページに戻る">
+      <span class="btn-ico" aria-hidden="true"></span>
+      戻る
+    </a>
+    <span class="copy">© 2025 運命怪談 / Character Profiles</span>
+  </div>
+
+  <script>
+    // 履歴がある時だけ history.back()。なければ href に遷移（フォールバック）
+    document.querySelector('.btn-back')?.addEventListener('click', e => {
+      e.preventDefault();
+      if (history.length > 1) history.back();
+      else location.href = e.currentTarget.getAttribute('href') || './';
+    });
+  </script>
+</footer>
+</body>
+</html>

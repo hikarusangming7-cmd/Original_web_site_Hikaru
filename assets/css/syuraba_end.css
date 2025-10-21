@@ -1,0 +1,277 @@
+* { margin: 0; }
+body { background-color: #000; }
+
+.syuraba_end { height: 100vh; }
+
+.imge{
+  background-image: url(/assets/img/修羅場エンド.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.button-container {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;              /* 余白を少し上に */
+  transform: translateX(-50%);
+}
+
+.link-button {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: none;
+  color: #2a241a;               /* くすんだインク色 */
+  background: #e6dcc7;          /* 古紙っぽい色 */
+  border: 1.5px solid #3c352a;  /* 細いインク線 */
+  border-radius: 6px;
+  font-family: "Noto Serif JP", serif;
+  letter-spacing: 0.08em;
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.25) inset,
+    0 6px 18px rgba(0,0,0,0.35); /* うっすら影 */
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+  filter: sepia(0.15) saturate(0.9); /* ほんのり古感 */
+}
+
+/* ホバー時は控えめに濃く・押し込む */
+.link-button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.25) inset,
+    0 10px 22px rgba(0,0,0,0.45);
+}
+
+/* クリック時は“押された”感じ */
+.link-button:active {
+  transform: translateY(0);
+  box-shadow:
+    0 0 0 rgba(0,0,0,0.25) inset,
+    0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* 小さめ画面でのサイズ調整 */
+/* @media (max-width: 480px) {
+  .link-button { font-size: 18px; padding: 10px 22px; }
+  .button-container { bottom: 2rem; }
+} */
+
+
+/*下記追記１回目*/
+/* ===== ベース：どのページにも貼れる ===== */
+:root{
+  /* 文字スタイル */
+  --end-font: "Noto Serif JP", serif;
+  --end-weight: 700;
+  --end-letter: .08em;
+
+  /* 色＆質感（必要に応じて差し替え） */
+  --end-color: #e7ce3a;           /* 黄ばみ */
+  --end-stroke: rgba(35,28,12,.55);
+  --end-shadow1: #433a1f;         /* うっすら影 */
+  --end-glow1: rgba(207,175,40,.25);
+  --end-glow2: rgba(207,175,40,.18);
+
+  /* 位置＆サイズ */
+  --end-top: min(5vh, 5px);
+  --end-size: clamp(26px, 5.2vw, 70px);
+
+  /* ブレンド／フィルタ（画面に合わせて調整） */
+  --end-blend: screen;            /* normal / screen / color-dodge */
+  --end-filter: saturate(.8) sepia(.25);
+
+  /* ノイズ（薄汚れ感） */
+  --grime-opacity: .45;           /* 0で無効化 */
+}
+
+.syuraba_end{ position: relative; }
+.imge{ position: relative; }
+
+/* 共通タイトル */
+.ending-title{
+  position: absolute;
+  top: var(--end-top);
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: .15em .35em;
+
+  font-family: var(--end-font);
+  font-weight: var(--end-weight);
+  font-size: var(--end-size);
+  letter-spacing: var(--end-letter);
+
+  color: var(--end-color);
+  filter: var(--end-filter);
+  text-shadow:
+    0 0.02em 0 var(--end-shadow1),
+    0 0 8px var(--end-glow1),
+    0 0 18px var(--end-glow2);
+
+  -webkit-text-stroke: 1px var(--end-stroke);
+  mix-blend-mode: var(--end-blend);
+  pointer-events: none;
+}
+
+/* 汚し：必要なときだけ付与（ending-title--grime） */
+.ending-title--grime::after{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    radial-gradient(8px 8px at 20% 30%, rgba(0,0,0,.22) 0 40%, transparent 41%) repeat,
+    radial-gradient(6px 6px at 70% 60%, rgba(0,0,0,.18) 0 40%, transparent 41%) repeat,
+    radial-gradient(5px 5px at 40% 80%, rgba(0,0,0,.16) 0 40%, transparent 41%) repeat;
+  background-size: 38px 32px, 34px 28px, 26px 24px;
+  mix-blend-mode: multiply;
+  opacity: var(--grime-opacity);
+  border-radius: .08em;
+  pointer-events: none;
+}
+
+/* スマホ最適化 */
+@media (max-width: 480px){
+  :root{
+    --end-top: 3vh;
+    --end-size: clamp(22px, 6vw, 40px);
+    --end-letter: .06em;
+  }
+}
+
+/* ====== プリセット（差し替えしやすいように用意） ====== */
+/* 明るめ背景用に強め発光（必要ならhtmlの <body> に .theme-bright を付ける） */
+.theme-bright{
+  --end-blend: color-dodge;
+  --end-glow1: rgba(255,230,90,.35);
+  --end-glow2: rgba(255,230,90,.28);
+  --end-stroke: rgba(30,22,8,.65);
+}
+
+/* もっと汚したいとき */
+.title-grimier{
+  --grime-opacity: .65;
+  --end-filter: saturate(.7) sepia(.35) contrast(1.05);
+}
+
+/* 汚し無し（クリーン）にしたいとき */
+.title-clean{
+  --grime-opacity: 0;
+  --end-filter: saturate(.9) sepia(.1);
+  --end-blend: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*下記追記*/
+/* ===== 筆文字用の変数（一括で雰囲気を調整） ===== */
+:root{
+  --brush-color: #f0cf28;                    /* 黄（本体） */
+  --brush-stroke: rgba(30,22,8,.65);         /* 縁取りの色 */
+  --brush-shadow: #3e331c;                   /* 足元の影 */
+  --brush-glow1: rgba(230,198,60,.28);       /* にじみ光１ */
+  --brush-glow2: rgba(230,198,60,.18);       /* にじみ光２ */
+  --brush-noise-opacity: .35;                /* かすれ粒子の強さ */
+  --brush-size: clamp(50px, 5.2vw, 80px);    /* サイズ */
+}
+
+/* 既存の .ending-title をベースに“筆表現”へ上書き */
+.ending-title--brush{
+  font-family: "Yuji Boku","Hiragino Mincho ProN","Yu Mincho",serif;
+  font-weight: 400;                           /* このフォントは 400 が綺麗 */
+  font-size: var(--brush-size);
+  letter-spacing: .06em;
+  color: var(--brush-color);
+  -webkit-text-stroke: 1.1px var(--brush-stroke);
+  text-shadow:
+    0 .04em 0 var(--brush-shadow),
+    0 0 10px var(--brush-glow1),
+    0 0 22px var(--brush-glow2);
+  filter: saturate(.85) sepia(.25);           /* くすませる */
+  mix-blend-mode: screen;                     /* 暗背景になじませる */
+}
+
+.ending-title--brush > span{
+  display:inline-block;
+  padding: .2em .38em;
+  /* かすれの“粒”をマスクで作る（対応ブラウザ） */
+  -webkit-mask-image:
+    radial-gradient(110% 140% at 20% 0%, #000 60%, transparent 65%),
+    radial-gradient(130% 160% at 80% 30%, #000 60%, transparent 66%),
+    radial-gradient(140% 160% at 50% 100%, #000 60%, transparent 66%);
+  -webkit-mask-composite: source-over;
+  mask-image:
+    radial-gradient(110% 140% at 20% 0%, #000 60%, transparent 65%),
+    radial-gradient(130% 160% at 80% 30%, #000 60%, transparent 66%),
+    radial-gradient(140% 160% at 50% 100%, #000 60%, transparent 66%);
+  mask-composite: add;
+  /* 細かいエッジの揺れ（対応広め） */
+  filter: url(#ink-bleed);
+  position: relative;
+}
+
+/* 紙汚れ＝微細ノイズ（薄汚いニュアンス） */
+.ending-title--brush::after{
+  content:"";
+  position:absolute; inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(8px 8px at 20% 30%, rgba(0,0,0,.22) 0 40%, transparent 41%) repeat,
+    radial-gradient(6px 6px at 70% 60%, rgba(0,0,0,.18) 0 40%, transparent 41%) repeat,
+    radial-gradient(5px 5px at 40% 80%, rgba(0,0,0,.16) 0 40%, transparent 41%) repeat;
+  background-size: 38px 32px, 34px 28px, 26px 24px;
+  mix-blend-mode: multiply;
+  opacity: var(--brush-noise-opacity);
+}
+
+/* スマホで少し下げる・詰める */
+@media (max-width: 480px){
+  :root{ --brush-size: clamp(36px, 7vw, 44px); }
+  .ending-title{ top: 3vh; letter-spacing:.05em; }
+}
+
+
+/*追記*/
+.ending-title {
+  text-shadow:
+    0 0.02em 0 var(--end-shadow1),
+    0 0.06em 4px rgba(0, 0, 0, 0.75),  /* ← これを追加：輪郭の陰影 */
+    0 0 8px var(--end-glow1),
+    0 0 20px var(--end-glow2),
+    0 0 35px rgba(255, 240, 120, 0.25); /* ← 発光を少し遠くまで */
+}
+
+:root {
+  --end-glow1: rgba(255, 240, 150, 0.5);
+  --end-glow2: rgba(255, 230, 100, 0.3);
+}
+
+@keyframes flash {
+  0%   { filter: brightness(1); }
+  30%  { filter: brightness(2.5); }
+  100% { filter: brightness(1); }
+}
+
+.ending-title {
+  animation: flash 1.4s ease-in-out 1;
+}
+
+/* 既存の見た目はそのまま。SVGフィルタを足すだけ */
+.ending-title--grime{
+  /* 他のCSS filterと併用OK。既存の var(--end-filter) も一緒に適用 */
+  filter: url(#ink-bleed) var(--end-filter);
+}
