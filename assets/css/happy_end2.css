@@ -2,7 +2,7 @@
 * { margin: 0; }
 :root{
   /* ここを差し替えるだけでOK */
-  --hero-image: url("/assets/img/ハッピーエンド２.png");
+  --hero-image: url("../img/ハッピーエンド２.png");
   --hero-title: "Happy Ending";
   --title-color: #fff6d8;        /* 発光の元色（温かいアイボリー） */
   --glow-color:  #ffdb8a;        /* 外側のグロー色 */
