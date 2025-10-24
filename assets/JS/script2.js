@@ -442,7 +442,11 @@ choices.addEventListener("click", (e) => {
         story.appendChild(document.createElement("br"));
         appendPara("その瞬間、病室の隅から、笑い声が聞こえた気がした。");
         story.appendChild(document.createElement("br"));
-        appendPara("もう逃げ場はない。この真っ白な部屋が⚪︎⚪︎ちゃんで埋め尽くされる日もそう遠くはないはずだ。");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendHtml("白い光のなかで、同じ言葉だけが増殖する。担当医も、看護師も、患者も、壁の掲示も——<strong>『今日の⚪︎⚪︎ちゃんも可愛い♡』</strong>。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
@@ -475,6 +479,13 @@ choices.addEventListener("click", (e) => {
         appendPara(
             "低い叫び声とともに、先輩の視線がふっと私を外れた。 代わりにスマホの画面の中、人形の瞳と目が合った気がした。"
         );
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
+        appendHtml("「<strong>………ケケケケケケケケケ！！！！</strong>」");
+        story.appendChild(document.createElement("br"));
+        story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         appendPara(
             "次の瞬間、先輩は意味不明の言葉を吐き続け、制御のきかない笑い声を漏らし始めた。 その姿に背筋が凍りつく。"

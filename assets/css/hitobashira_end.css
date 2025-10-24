@@ -4,7 +4,7 @@ body { background-color: #000; }
 .nomal_end { height: 100vh; }
 
 .imge{
-  background-image: url(/assets/img/人柱エンド.png);
+  background-image: url("../img/hitobashira_end.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
