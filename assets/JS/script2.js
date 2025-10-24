@@ -446,7 +446,7 @@ choices.addEventListener("click", (e) => {
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendHtml("白い光のなかで、同じ言葉だけが増殖する。担当医も、看護師も、患者も、壁の掲示も——<strong>『今日の⚪︎⚪︎ちゃんも可愛い♡』</strong>。");
+        appendPara("ここにはもう、逃げ道はない。白い部屋も、担当医も、看護師も、患者も——気づけば同じ微笑で“⚪︎⚪︎ちゃん”と呼ぶ世界。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
