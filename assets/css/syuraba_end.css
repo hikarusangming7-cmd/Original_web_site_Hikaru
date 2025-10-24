@@ -4,7 +4,7 @@ body { background-color: #000; }
 .syuraba_end { height: 100vh; }
 
 .imge{
-  background-image: url(/assets/img/修羅場エンド.png);
+  background-image: url("../img/syura_end.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

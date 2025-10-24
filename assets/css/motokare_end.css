@@ -4,7 +4,7 @@ body { background-color: #000; }
 .motokare_end { height: 100vh; }
 
 .imge{
-  background-image: url(/assets/img/元彼とハッピーエンド.png);
+  background-image: url("../img/motokare_happy.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

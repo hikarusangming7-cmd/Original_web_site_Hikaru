@@ -6,7 +6,7 @@ body { background-color: #000; }
 .imge{
   position: relative;
   height: 100vh;
-  background-image: url(/assets/img/先輩とハッピーエンド.png);
+  background-image: url("../img/先輩とハッピーエンド.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
