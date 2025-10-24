@@ -65,7 +65,7 @@ choices.addEventListener("click", (e) => {
         appendPara("そう呟き、店を出て駅の方へ歩きかけたときだった。");
         story.appendChild(document.createElement("br"));
         story.appendChild(document.createElement("br"));
-        appendPara("――見えた。");
+        appendPara("――見つけた。");
         story.appendChild(document.createElement("br"));
         appendPara("少し離れた通りの向こうに、先輩と元彼の後ろ姿があった。");
         
